@@ -200,3 +200,8 @@ Same steps as before
 - Scroll down on both inspectors to the very bottom and click on expressions
 
 - Remplace the menus in the same way
+
+
+## Merge with an existing animation controller
+
+WIP
