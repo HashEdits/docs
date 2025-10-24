@@ -202,6 +202,136 @@ Same steps as before
 - Remplace the menus in the same way
 
 
-## Merge with an existing animation controller
+## Merging onto existing setups extra logic
 
-WIP
+This section is intresting if you have existing animation controller logic which enables custom toggles or systems on your avatar.
+
+ Modular Avatar is not supported because it does not re-order the ID of VRC layer drivers which breaks my smoothing logic
+
+ ### VRCFury
+ Please note that I will not provide support for this way of merging my animation controllers
+
+ >⚠️ Double check that your animator follows the following:
+ >- Doesn't have any states that sets the ``Eyes & Eyelids`` section of a [Animator Tracking Control](https://creators.vrchat.com/avatars/state-behaviors/#animator-tracking-control) animation state behevior to anything other than ``No Change``
+ >- Uses the ``FacialExpressionsDisabled`` to supress any gestures (All normal gesture transitions should have a check on ``FacialExpressionsDisabled`` == ``false`` and have a default state with only a single any state condition: ``FacialExpressionsDisabled`` == ``true``)
+
+ - Add VRCFury to your list of reppositories by clicking [here](vcc://vpm/addRepo?url=https%3A%2F%2Fvcc.vrcfury.com)
+ - Click ``Manage Project``
+ - Search for VRCFury
+ - Click the ``+`` Button
+ ![AddVRCFurry](img/AddVRCFurry.png)
+ - Go back to Unity
+ - Right click on your avatar
+ - Click on Create Empty
+ - Name it something that makes sense (ex: ``VRCFHashFT``)
+ - Click the ``Add Component`` Button
+ - Search for ``Full Controller``
+
+    ![SearchFullController](img/SearchFullController.png)
+
+ - Click on the text ``Full Controller (VRCFury)`` to add the component
+
+ - Click the ``+`` Button under the Controller section 2 times
+ - Assign the ``FTOnly`` and ``Additive ET`` controllers that can be found under ``Hash's_Things/AvatarName/anim/controllers``
+
+ - Click the ``+`` Button under the Menu section 
+ - Assing the SimpleFTControls menu under File
+ - Write ``FT`` under Prefix
+ - Click the ``+`` Button under the parameters section
+ - Assign the FTOnly parameters
+ - Click on advanced options
+ - Click the ``+`` Button under global parameters
+ - Write ``*``
+
+ - Optional
+    - Add an ``Override Menu Icon`` component
+    - Write ``FT`` on the Menu Path
+    - Click the target next to the icon slot
+    - Search for ``FaceTrackingIcon2``
+
+ - This is what it should look like:
+
+ ![VRCFuryComponentFilled](img/VRCFuryComponentFilled.png)
+ 
+
+
+### Manual
+- Make sure you have ``Avatars 3.0 Manager`` added to your project's packages
+
+    ![AddAV3Manager](img/AddAV3Manager.png)
+
+#### FX
+- Open your animator by selecting your avatar scrolling to ``playable layers`` and double on the item next to ``FX``
+
+    ![SelectFX](img/SelectFX.png)
+
+- Duplicate it by selecting it and pressing ``Ctrl``+``D``
+
+- Identify and delete anything that's not part of the default ``FX`` controller
+    - To do that you'll need to compare what you added on top of your FX controller by oppening your animation controller and the default one
+
+        ![FXControllerDiff](img/FXControllerDiff.png)
+        > Here for exemple only the ``DressBand`` layer has been added
+
+        ![FXControllerPostDeletion](img/FXControllerPostDeletion.png)
+        > This is what mine looks like after deleting the rest of the layers
+
+ - ⚠️ Make sure that you don't have any states that sets the ``Eyes & Eyelids`` section of a [Animator Tracking Control](https://creators.vrchat.com/avatars/state-behaviors/#animator-tracking-control) animation state behevior to anything other than ``No Change``
+
+- Assign the Face Tracking animator that corresponds to the name of your FX Controller with FT at the end of it
+
+- Open The AV3 Emulator window
+
+    ![OpenAV3MWindow](img/OpenAV3MWindow.png)
+
+- Drag and drop your avatar in the avatar slot
+
+- Click FX
+
+![AV3MWindowFXClick](img/AV3MWindowFXClick.png)
+
+- Scroll down to the bottom
+
+    ![AV3MWindowFXScrolledDown](img/AV3MWindowFXScrolledDown.png)
+
+- Click ``Add Controller to merge``
+
+- Drag and drop the duplicate of your FX Controller with only your animation logic
+
+- Click ``Clear All Sufixes``
+
+    ![AV3MClearAllSufixes](img/AV3MClearAllSufixes.png)
+
+- Click ``Merge on copy``
+
+- You're done with the animator!
+
+#### Parameters
+
+- Switch your parameters to the ones that corresponds to the name of your parameters with FT at the end of it
+- Extract your custom logic VRCAvatarParameters onto a different file
+- Open the Avatar 3.0 Manager window
+- Drag and drop your avatar
+- Click on the parameters tab
+
+![AV3MParametersTab](img/AV3MParametersTab.png)
+
+- Add your isolated parameters
+- Click ``Copy parameters``
+
+#### Menus
+
+- Select your exisiting menu by double clicking the item next to menu under the expression dropdown of the avatar descriptor
+- Click the ``+`` button
+
+![MenuAddButton](img/MenuAddButton.png)
+
+- Rename the menu to ``FT``
+
+- Click the little target near the icon and search for ``Face`` and assign the white VRCFT logo
+
+- Select ``SubMenu`` as the type
+
+- Click the little target next to sub menu and search for ``simple`` and assign the simple sub menu
+
+![MenuCompleated](img/MenuCompleated.png)
