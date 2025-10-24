@@ -167,7 +167,7 @@ Same steps as before
 
  ![MusclesSettings](img/MusclesSettings.png)
 
- - Press ``Done```
+ - Press ``Done``
 
  - Repete the same To acces the eye muscle settings on your custom fbx
 
