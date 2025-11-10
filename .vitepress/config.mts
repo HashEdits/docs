@@ -3,6 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "docs",
+  base: '/docs/',
 
   title: "Hash Face Tracking",
   description: "Face Tracking by Hash",
