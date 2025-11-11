@@ -13,9 +13,9 @@ First you'll need to find your main FBX file that contains the head of your mode
 To do so:
 
 - Select it in your scene hierarchy by left clicking on it:
-  ![UnitySelectPrefab](img/UnitySelectPrefab.png)
+  ![UnitySelectPrefab](/img/UnitySelectPrefab.png)
 - go to the inspector tab (By default on the left hand side)
-  ![UnityInspectorTab](img/UnityInspectorTab.png)
+  ![UnityInspectorTab](/img/UnityInspectorTab.png)
 - Click on the avatar armature component (the little green icon of a person)
 
 - This will reveal the file in the unity file explorer
@@ -48,18 +48,18 @@ To do so:
 - Click `Import`
 - Click `FBX`
 
-![BlenderFBXImport](img/BlenderFBXImport.png)
+![BlenderFBXImport](/img/BlenderFBXImport.png)
 
 - Select where your custom model is located at
 
-![BlenderImportFBXFile](img/BlenderImportFBXFile.png)
+![BlenderImportFBXFile](/img/BlenderImportFBXFile.png)
 
 - Press the `Import FBX` button at the bottom left of the window
 
 Your custom model should now be into Blender!
 Feel free to save it somewhere safe by pressing `Ctrl`+`S` to save your progress :)
 
-![CustomFBXImported](img/BlenderCustomFBXImported.png)
+![CustomFBXImported](/img/BlenderCustomFBXImported.png)
 
 ### Import the face tracking model
 
@@ -74,25 +74,25 @@ Same steps as before
 
 - Press the `Import FBX` button at the bottom left of the window
 
-![BlenderFTFBXImported](img/BlenderFTFBXImported.png)
+![BlenderFTFBXImported](/img/BlenderFTFBXImported.png)
 
 ### Matching materials
 
 - Develop what's under the armature that should be named `Armature.001` and select the face tracking head mesh (named `Body.001` most times)
 
-- Select the Materials tab ![MaterialsTabIcon](img/MaterialsTabIcon.png)
+- Select the Materials tab ![MaterialsTabIcon](/img/MaterialsTabIcon.png)
 
 - Click the black materials icon to change the currently selected material
 
-![BrowseMaterials](img/BrowseMaterials.png)
+![BrowseMaterials](/img/BrowseMaterials.png)
 
 - Select the version of the material without the `.001` at the end of its name
 
-![SelectMatWo.001](img/SelectMatWo.001.png)
+![SelectMatWo.001](/img/SelectMatWo.001.png)
 
 - Select the material bellow
 
-![SelectMaterialBellow](img/SelectMaterialBellow.png)
+![SelectMaterialBellow](/img/SelectMaterialBellow.png)
 
 - Reproduce the process for the rest of the materials
 
@@ -100,11 +100,11 @@ Same steps as before
 
 - Develop what's under the armature that should be named `Armature.001` and select the face tracking head mesh (named `Body.001` most times)
 
-- Select the modifiers tab ![ModifiersTabIcon](img/ModifiersTabIcon.png)
+- Select the modifiers tab ![ModifiersTabIcon](/img/ModifiersTabIcon.png)
 
 - Click the Object field
 
-![ObjectField](img/ObjectField.png)
+![ObjectField](/img/ObjectField.png)
 
 - Select `Armature`
 
@@ -135,7 +135,7 @@ Same steps as before
 - Click `Export`
 - Click `FBX`
 
-![BlenderFBXExport](img/BlenderFBXExport.png)
+![BlenderFBXExport](/img/BlenderFBXExport.png)
 
 - Select where your custom model is located at
 
@@ -149,11 +149,11 @@ Same steps as before
 
 - Take note of the Convert Units scaling (Here it's `1M/Unit` but it can also be `1cm/Unit`)
 
-![UnityImportScale](img/UnityImportScale.png)
+![UnityImportScale](/img/UnityImportScale.png)
 
 - In the Blender Export window take the appropriate export scaling `1M/Unit = FBX All` & `1cm/Unit = All Local`
 
-![BlenderApplyScaling](img/BlenderApplyScaling.png)
+![BlenderApplyScaling](/img/BlenderApplyScaling.png)
 
 - Press `Export FBX`
 
@@ -167,7 +167,7 @@ Same steps as before
 - Under the `Per-Muscle Settings` group click on `Head` and develop the following: `Eye Down-Up`, `Eye In-Out`, `Eye Down-Up`, `Eye In-Out`
 - Take a screenshot to remember the settings
 
-![MusclesSettings](img/MusclesSettings.png)
+![MusclesSettings](/img/MusclesSettings.png)
 
 - Press `Done`
 
@@ -185,7 +185,7 @@ Same steps as before
 
 - Put the second inspector window side by side with the original one
 
-![InspectorsSideBySide](img/InspectorsSideBySide.png)
+![InspectorsSideBySide](/img/InspectorsSideBySide.png)
 
 - Select your prefab
 
@@ -193,7 +193,7 @@ Same steps as before
 
 - Click on the Additive animation controller on the FT prefab inspector
 
-![AnimationControllerHighlight](img/AnimationControllerHighlight.png)
+![AnimationControllerHighlight](/img/AnimationControllerHighlight.png)
 
 - Drag and drop the highlighted animation controller into the additive slot on your prefab
 
@@ -222,15 +222,15 @@ Please note that I will not provide support for this way of merging my animation
 - Click `Manage Project`
 - Search for VRCFury
 - Click the `+` Button
-  ![AddVRCFurry](img/AddVRCFurry.png)
+  ![AddVRCFurry](/img/AddVRCFurry.png)
 - Go back to Unity
 - Right click on your avatar
-- Click on Create Empty
+- Click on `Create Empty`
 - Name it something that makes sense (ex: `VRCFHashFT`)
 - Click the `Add Component` Button
 - Search for `Full Controller`
 
-  ![SearchFullController](img/SearchFullController.png)
+  ![SearchFullController](/img/SearchFullController.png)
 
 - Click on the text `Full Controller (VRCFury)` to add the component
 
@@ -255,19 +255,19 @@ Please note that I will not provide support for this way of merging my animation
 
 - This is what it should look like:
 
-![VRCFuryComponentFilled](img/VRCFuryComponentFilled.png)
+![VRCFuryComponentFilled](/img/VRCFuryComponentFilled.png)
 
 ### Manual
 
 - Make sure you have `Avatars 3.0 Manager` added to your project's packages
 
-  ![AddAV3Manager](img/AddAV3Manager.png)
+  ![AddAV3Manager](/img/AddAV3Manager.png)
 
 #### FX
 
 - Open your animator by selecting your avatar scrolling to `playable layers` and double on the item next to `FX`
 
-  ![SelectFX](img/SelectFX.png)
+  ![SelectFX](/img/SelectFX.png)
 
 - Duplicate it by selecting it and pressing `Ctrl`+`D`
 
@@ -275,11 +275,11 @@ Please note that I will not provide support for this way of merging my animation
 
   - To do that you'll need to compare what you added on top of your FX controller by opening your animation controller and the default one
 
-    ![FXControllerDiff](img/FXControllerDiff.png)
+    ![FXControllerDiff](/img/FXControllerDiff.png)
 
     > Here for exemple only the `DressBand` layer has been added
 
-    ![FXControllerPostDeletion](img/FXControllerPostDeletion.png)
+    ![FXControllerPostDeletion](/img/FXControllerPostDeletion.png)
 
     > This is what mine looks like after deleting the rest of the layers
 
@@ -289,17 +289,17 @@ Please note that I will not provide support for this way of merging my animation
 
 - Open The AV3 Emulator window
 
-  ![OpenAV3MWindow](img/OpenAV3MWindow.png)
+  ![OpenAV3MWindow](/img/OpenAV3MWindow.png)
 
 - Drag and drop your avatar in the avatar slot
 
 - Click FX
 
-![AV3MWindowFXClick](img/AV3MWindowFXClick.png)
+![AV3MWindowFXClick](/img/AV3MWindowFXClick.png)
 
 - Scroll down to the bottom
 
-  ![AV3MWindowFXScrolledDown](img/AV3MWindowFXScrolledDown.png)
+  ![AV3MWindowFXScrolledDown](/img/AV3MWindowFXScrolledDown.png)
 
 - Click `Add Controller to merge`
 
@@ -307,7 +307,7 @@ Please note that I will not provide support for this way of merging my animation
 
 - Click `Clear All Suffixes`
 
-  ![AV3MClearAllSuffixes](img/AV3MClearAllSufixes.png)
+  ![AV3MClearAllSuffixes](/img/AV3MClearAllSufixes.png)
 
 - Click `Merge on copy`
 
@@ -321,7 +321,7 @@ Please note that I will not provide support for this way of merging my animation
 - Drag and drop your avatar
 - Click on the parameters tab
 
-![AV3MParametersTab](img/AV3MParametersTab.png)
+![AV3MParametersTab](/img/AV3MParametersTab.png)
 
 - Add your isolated parameters
 - Click `Copy parameters`
@@ -331,7 +331,7 @@ Please note that I will not provide support for this way of merging my animation
 - Select your existing menu by double clicking the item next to menu under the expression dropdown of the avatar descriptor
 - Click the `+` button
 
-![MenuAddButton](img/MenuAddButton.png)
+![MenuAddButton](/img/MenuAddButton.png)
 
 - Rename the menu to `FT`
 
@@ -341,4 +341,4 @@ Please note that I will not provide support for this way of merging my animation
 
 - Click the little target next to sub menu and search for `simple` and assign the simple sub menu
 
-![MenuCompleted](img/MenuCompleated.png)
+![MenuCompleted](/img/MenuCompleated.png)

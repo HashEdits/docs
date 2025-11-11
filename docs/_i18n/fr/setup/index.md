@@ -1,14 +1,14 @@
 # Configuration
 
-Cette section de la documentation explique comment installer l'un des module complémentaire de Face Tracking de Hash sans aucune connaissance préalable de la création d'avatars VRChat.
+Cette section de la documentation explique comment installer l'un des add-on de Face Tracking de Hash sans aucune connaissance préalable de la création d'avatars VRChat.
 
-## Télécharger le module complémentaire depuis Booth/Ko-fi
+## Télécharger l'add-on depuis Booth/Ko-fi
 
-Cliquez sur le bouton de téléchargement et décompressez l'archive si vous avez acheté le module complémentaire sur Booth.
+Cliquez sur le bouton de téléchargement et décompressez l'archive si vous avez acheté l'add-on sur Booth.
 
 ## Téléchargez la version appropriée de l'avatar.
 
-Consultez la fiche produit du module complémentaire dans la boutique. Vous y trouverez une version de l'avatar compatible avec le module complémentaire.
+Consultez la fiche produit de l'add-on dans la boutique. Vous y trouverez une version de l'avatar compatible avec l'add-on'.
 
 Téléchargez-la également sur Booth.
 
@@ -26,29 +26,29 @@ Faites glisser et déposez le fichier .UnityPackage de l'avatar vers la fenêtre
 
 Cliquez sur « Importer » dans la fenêtre qui s'affiche.
 
-## Importer mon module complémentaire
+## Importer mon add-on
 
-Faites glisser et déposez le fichier .UnityPackage de mon module complémentaire vers la fenêtre de l'éditeur Unity de votre projet.
+Faites glisser et déposez le fichier .UnityPackage de mon add-on vers la fenêtre de l'éditeur Unity de votre projet.
 
 Cliquez sur « Importer » dans la fenêtre qui s'affiche.
 
-## Générer le modèle de suivi du visage
+## Générer le modèle de face-tracking
 
 - Allez en haut de votre fenêtre Unity et cliquez sur `Tools`->`Hash`->`AvatarName`
 
-![PatchingWindow](img/SummonPatchingWindow.png)
+![PatchingWindow](/img/SummonPatchingWindow.png)
 
 > Certains auront plusieurs options pour différents prefab, vous êtes libre de choisir celle que vous voulez ou de toutes les sélectionner
 
 - Cliquez sur le bouton `Patch` dans la fenêtre qui s'ouvre.
 
-![alt text](img/PatcherWindow.png)
+![alt text](/img/PatcherWindow.png)
 
 ## Placez le prefab dans votre scène.
 
 - Ouvrez le dossier `Assets`/`Hash's_Things`/`AvatarName`/`prefab`.
 
-![PrefabSelection](img/PrefabSelection.png)
+![PrefabSelection](/img/PrefabSelection.png)
 
 - Glissez-déposez le prefab que vous souhaitez utiliser dans votre scène.
 

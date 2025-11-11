@@ -36,19 +36,19 @@ Click "import" on the window that pops up
 
 - Go at the top of your Unity window and click on `Tools`->`Hash`->`AvatarName`
 
-![PatchingWindow](img/SummonPatchingWindow.png)
+![PatchingWindow](/img/SummonPatchingWindow.png)
 
 > Some will have multiple options for different prefabs, you're free to do the one you want or all of them
 
 - Click the `Patch` button on the window that opens
 
-![alt text](img/PatcherWindow.png)
+![alt text](/img/PatcherWindow.png)
 
 ## Place prefab in your scene
 
 - Navigate to `Assets`/`Hash's_Things`/`AvatarName`/`prefab`
 
-![PrefabSelection](img/PrefabSelection.png)
+![PrefabSelection](/img/PrefabSelection.png)
 
 - Drag and drop the prefab you wish to use in your scene
 

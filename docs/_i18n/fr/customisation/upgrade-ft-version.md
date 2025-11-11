@@ -1,6 +1,6 @@
 # Mise à jour de la version du face tracking
 
-De temps en temps, je revisite certains de mes modules complémentaires de face tracking afin de les mettre à jour en fonction de mes dernières découvertes. Voici un guide expliquant comment procéder à la mise à jour :
+De temps en temps, je revisite certains de mes add-ons de face tracking afin de les mettre à jour en fonction de mes dernières découvertes. Voici un guide expliquant comment procéder à la mise à jour :
 
 ## Créez des prefabs de votre ou vos avatar(s).
 

@@ -16,9 +16,9 @@ First you'll need to find your main FBX file that contains the head of your mode
 To do so:
 
 - Select it in your scene hierarchy by left clicking on it:
-  ![UnitySelectPrefab](/customisation/img/UnitySelectPrefab.png)
+  ![UnitySelectPrefab](/img/UnitySelectPrefab.png)
 - Go to the inspector tab (By default on the left hand side)
-  ![UnityInspectorTab](/customisation/img/UnityInspectorTab.png)
+  ![UnityInspectorTab](/img/UnityInspectorTab.png)
 - Click on the avatar armature component (the little green icon of a person)
 
 - This will reveal the file in the unity file explorer
@@ -51,18 +51,18 @@ To do so:
 - Click `Import`
 - Click `FBX`
 
-  ![BlenderFBXImport](/customisation/img/BlenderFBXImport.png)
+  ![BlenderFBXImport](/img/BlenderFBXImport.png)
 
 - Select where your custom model is located at
 
-  ![BlenderImportFBXFile](/customisation/img/BlenderImportFBXFile.png)
+  ![BlenderImportFBXFile](/img/BlenderImportFBXFile.png)
 
 - Press the `Import FBX` button at the bottom left of the window
 
 Your custom model should now be into Blender!
 Feel free to save it somewhere safe by pressing `Ctrl`+`S` to save your progress
 
-![CustomFBXImported](/customisation/img/BlenderCustomFBXImported.png)
+![CustomFBXImported](/img/BlenderCustomFBXImported.png)
 
 ### Generate a mix of your blendshapes
 
@@ -74,38 +74,38 @@ Back in unity take note of your blendshape mix and reproduce it in blender
 
 - Search `Editor Patcher` and click the `+` icon to it to your repositories
 
-![AddEditorPatcher](img/AddEditorPatcher.png)
+![AddEditorPatcher](/img/AddEditorPatcher.png)
 
 - Select your face mesh on your avatar (It's called `Body` Here)
 
-![SelectFaceMesh](img/SelectFaceMesh.png)
+![SelectFaceMesh](/img/SelectFaceMesh.png)
 
 - Develop the `Blendshapes` section
 
 - Press the little `0` next to the search bar to only show the blendshapes that are non zero
 
-![CustomShapeMixUnity](img/CustomShapeMixUnity.png)
+![CustomShapeMixUnity](/img/CustomShapeMixUnity.png)
 
 - Select your face mesh in Blender by simply clicking on it in the viewport
 
-- To select the value in blender go to the data properties tab (3 green dots linked together) ![DataPropertiesIcon](img/DataPropertiesIcon.png)
+- To select the value in blender go to the data properties tab (3 green dots linked together) ![DataPropertiesIcon](/img/DataPropertiesIcon.png)
 
 - Develop the ShapeKeys menu
 - Click the search arrow right above the `Relative` checkbox
 
-  ![ShapeKeyMenu](img/ShapeKeyMenu.png)
+  ![ShapeKeyMenu](/img/ShapeKeyMenu.png)
 
 - Search for the same blendshapes you have customized on Unity (in my case here it's `browDownAngryRight` & `browDownAngryLeft`)
 
 - Set them to the same values (be careful blender shapekeys are 0→1 where unity is 0→100)
 
-  ![ShapeKeysMenuBlendShapesSet](img/ShapeKeysMenuBlendShapesSet.png)
+  ![ShapeKeysMenuBlendShapesSet](/img/ShapeKeysMenuBlendShapesSet.png)
 
 - Click the little down arrow bellow the `-` button
 
 - Click `New Shape from mix`
 
-  ![ShapeKeyMenuMix](img/ShapeKeyMenuMix.png)
+  ![ShapeKeyMenuMix](/img/ShapeKeyMenuMix.png)
 
 - Press the little `X` near the search bar and scroll at the bottom of the list to reset your search
 
@@ -113,7 +113,7 @@ Back in unity take note of your blendshape mix and reproduce it in blender
 
 - Scroll down at the Copy the name of your shapekey mix (you can double click the name to select the text) (in my case it's `Key 241`)
 
-  ![ShapeKeyMixCreated](img/ShapeKeyMixCreated.png)
+  ![ShapeKeyMixCreated](/img/ShapeKeyMixCreated.png)
 
 ### Applying the fix
 
@@ -121,17 +121,17 @@ Back in unity take note of your blendshape mix and reproduce it in blender
 
 - Click the Y- Gizmo or press `Numpad 1` to make the avatar face forward
 
-  ![Y-Gizmo](img/Y-Gizmo.png)
+  ![Y-Gizmo](/img/Y-Gizmo.png)
 
 - Go into edit mode by pressing `Tab` while having your mouse over the viewpoint
 
 - Click the Xray Mode button at the top right corner of your viewpoint
 
-  ![XrayMode](img/XrayMode.png)
+  ![XrayMode](/img/XrayMode.png)
 
 - Select Roughly the right side of your face
 
-![RightSideSelection.png](img/RightSideSelection.png)
+![RightSideSelection.png](/img/RightSideSelection.png)
 
 - Select the `EyeClosedRight` ShapeKey
 
@@ -139,11 +139,11 @@ Back in unity take note of your blendshape mix and reproduce it in blender
 
 - Select `Blend from Shape`
 
-  ![BlendFromShape](img/BlendFromShape.png)
+  ![BlendFromShape](/img/BlendFromShape.png)
 
 - Click the little arrow to develop the Blend from Shape menu
 
-  ![BlendFromShapeMenu](img/BlendFromShapeMenu.png)
+  ![BlendFromShapeMenu](/img/BlendFromShapeMenu.png)
 
 - Paste the name of your custom mix (`Key 241` for me)
 
@@ -151,7 +151,7 @@ Back in unity take note of your blendshape mix and reproduce it in blender
 
 - Set a weight of `-1`
 
-  ![BlendFromShapeCompleted](img/BlendFromShapeCompleted.png)
+  ![BlendFromShapeCompleted](/img/BlendFromShapeCompleted.png)
 
   > This is what it should look like
 
@@ -159,7 +159,7 @@ Back in unity take note of your blendshape mix and reproduce it in blender
 
 - Roughly select the Left side of your face
 
-  ![LeftSideSelection](img/LeftSideSelction.png)
+  ![LeftSideSelection](/img/LeftSideSelction.png)
 
 - Reproduce the process with selecting `EyeClosedLeft`
 
@@ -170,7 +170,7 @@ Back in unity take note of your blendshape mix and reproduce it in blender
 - Click `Export`
 - Click `FBX`
 
-![BlenderFBXExport](/customisation/img/BlenderFBXExport.png)
+![BlenderFBXExport](/img/BlenderFBXExport.png)
 
 - Select where your custom model is located at
 
@@ -184,11 +184,11 @@ Back in unity take note of your blendshape mix and reproduce it in blender
 
 - Take note of the Convert Units scaling (Here it's `1M/Unit` but it can also be `1cm/Unit`)
 
-![UnityImportScale](/customisation/img/UnityImportScale.png)
+![UnityImportScale](/img/UnityImportScale.png)
 
 - In the Blender Export window take the appropriate export scaling `1M/Unit = FBX All` & `1cm/Unit = All Local`
 
-![BlenderApplyScaling](/customisation/img/BlenderApplyScaling.png)
+![BlenderApplyScaling](/img/BlenderApplyScaling.png)
 
 - Press `Export FBX`
 

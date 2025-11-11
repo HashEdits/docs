@@ -16,9 +16,9 @@ Vous devez d'abord trouver le fichier FBX principal qui contient la tête de vot
 Pour ce faire :
 
 - Sélectionnez-le dans la hiérarchie de votre scène en cliquant dessus avec le bouton gauche de la souris :
-  ![UnitySelectPrefab](/customisation/img/UnitySelectPrefab.png)
+  ![UnitySelectPrefab](/img/UnitySelectPrefab.png)
 - Allez dans l'onglet Inspecteur (par défaut, à gauche).
-  ![UnityInspectorTab](/customisation/img/UnityInspectorTab.png)
+  ![UnityInspectorTab](/img/UnityInspectorTab.png)
 - Cliquez sur le composant Armature de l'avatar (la petite icône verte représentant une personne).
 
 - Cela fera apparaître le fichier dans l'explorateur de fichiers Unity
@@ -51,18 +51,18 @@ Pour ce faire :
 - Cliquez sur `Import`.
 - Cliquez sur `FBX`
 
-  ![BlenderFBXImport](/customisation/img/BlenderFBXImport.png)
+  ![BlenderFBXImport](/img/BlenderFBXImport.png)
 
 - Sélectionnez l'emplacement de votre modèle personnalisé.
 
-  ![BlenderImportFBXFile](/customisation/img/BlenderImportFBXFile.png)
+  ![BlenderImportFBXFile](/img/BlenderImportFBXFile.png)
 
 - Appuyez sur le bouton `Import FBX` en bas à gauche de la fenêtre.
 
 Votre modèle personnalisé devrait maintenant être dans Blender !
 N'hésitez pas à l'enregistrer dans un endroit sûr en appuyant sur `Ctrl` + `S` pour enregistrer votre progression.
 
-![CustomFBXImported](/customisation/img/BlenderCustomFBXImported.png)
+![CustomFBXImported](/img/BlenderCustomFBXImported.png)
 
 ### Générez un mélange de vos blendshapes.
 
@@ -74,38 +74,38 @@ De retour dans Unity, notez votre mélange de blendshapes et reproduisez-le dans
 
 - Recherchez `Editor Patcher` et cliquez sur l'icône `+` pour l'ajouter à vos dépôts.
 
-![AddEditorPatcher](img/AddEditorPatcher.png)
+![AddEditorPatcher](/img/AddEditorPatcher.png)
 
 - Sélectionnez le mesh de votre visage sur votre avatar (ici, il s'appelle `Body`)
 
-![SelectFaceMesh](img/SelectFaceMesh.png)
+![SelectFaceMesh](/img/SelectFaceMesh.png)
 
 - Développez la section « Blendshapes »
 
 - Appuyez sur le petit `0` à côté de la barre de recherche pour n'afficher que les blendshapes qui ne sont pas égales à zéro
 
-![CustomShapeMixUnity](img/CustomShapeMixUnity.png)
+![CustomShapeMixUnity](/img/CustomShapeMixUnity.png)
 
 - Sélectionnez le mesh de votre visage dans Blender en cliquant simplement dessus du viewport
 
-- Pour sélectionner la valeur dans Blender, allez dans l'onglet des propriétés des données (3 points verts reliés entre eux) ![DataPropertiesIcon](img/DataPropertiesIcon.png)
+- Pour sélectionner la valeur dans Blender, allez dans l'onglet des propriétés des données (3 points verts reliés entre eux) ![DataPropertiesIcon](/img/DataPropertiesIcon.png)
 
 - Développez le menu ShapeKeys
 - Cliquez sur la flèche de recherche juste au-dessus de la case à cocher `Relative`
 
-  ![ShapeKeyMenu](img/ShapeKeyMenu.png)
+  ![ShapeKeyMenu](/img/ShapeKeyMenu.png)
 
 - Recherchez les mêmes blendshapes que vous avez personnalisés dans Unity (dans mon cas, il s'agit de `browDownAngryRight` et `browDownAngryLeft`)
 
 - Définissez-les sur les mêmes valeurs (attention, les shapekeys de Blender vont de 0 à 1, tandis que ceux de Unity vont de 0 à 100)
 
-  ![ShapeKeysMenuBlendShapesSet](img/ShapeKeysMenuBlendShapesSet.png)
+  ![ShapeKeysMenuBlendShapesSet](/img/ShapeKeysMenuBlendShapesSet.png)
 
 - Cliquez sur la petite flèche vers le bas sous le bouton `-`.
 
 - Cliquez sur `New Shape from mix`.
 
-  ![ShapeKeyMenuMix](img/ShapeKeyMenuMix.png)
+  ![ShapeKeyMenuMix](/img/ShapeKeyMenuMix.png)
 
 - Appuyez sur le petit `X` près de la barre de recherche et faites défiler vers le bas de la liste pour réinitialiser votre recherche.
 
@@ -113,7 +113,7 @@ De retour dans Unity, notez votre mélange de blendshapes et reproduisez-le dans
 
 - Faites défiler vers le bas jusqu'à `Copy the name of your shapekey mix` (vous pouvez double-cliquer sur le nom pour sélectionner le texte) (dans mon cas, c'est `Key 241`).
 
-  ![ShapeKeyMixCreated](img/ShapeKeyMixCreated.png)
+  ![ShapeKeyMixCreated](/img/ShapeKeyMixCreated.png)
 
 ### Application de la correction
 
@@ -121,17 +121,17 @@ De retour dans Unity, notez votre mélange de blendshapes et reproduisez-le dans
 
 - Cliquez sur le Gizmo `Y-` ou appuyez sur `Numpad 1` pour que l'avatar regarde vers l'avant
 
-  ![Y-Gizmo](img/Y-Gizmo.png)
+  ![Y-Gizmo](/img/Y-Gizmo.png)
 
 - Passez en mode édition en appuyant sur la touche `Tab` tout en plaçant votre souris sur le point de vue.
 
 - Cliquez sur le bouton `Xray Mode` situé dans le coin supérieur droit de votre point de vue.
 
-![XrayMode](img/XrayMode.png)
+![XrayMode](/img/XrayMode.png)
 
 - Sélectionnez approximativement le côté droit de votre visage.
 
-![RightSideSelection.png](img/RightSideSelection.png)
+![RightSideSelection.png](/img/RightSideSelection.png)
 
 - Sélectionnez la ShapeKey `EyeClosedRight`
 
@@ -139,11 +139,11 @@ De retour dans Unity, notez votre mélange de blendshapes et reproduisez-le dans
 
 - Sélectionnez `Blend from Shape`
 
-  ![BlendFromShape](img/BlendFromShape.png)
+  ![BlendFromShape](/img/BlendFromShape.png)
 
 - Cliquez sur la petite flèche pour développer le menu `Blend from Shape`
 
-  ![BlendFromShapeMenu](img/BlendFromShapeMenu.png)
+  ![BlendFromShapeMenu](/img/BlendFromShapeMenu.png)
 
 - Collez le nom de votre mélange personnalisé (`Key 241` pour moi)
 
@@ -151,7 +151,7 @@ De retour dans Unity, notez votre mélange de blendshapes et reproduisez-le dans
 
 - Définissez un poids (weight) de `-1`
 
-  ![BlendFromShapeCompleted](img/BlendFromShapeCompleted.png)
+  ![BlendFromShapeCompleted](/img/BlendFromShapeCompleted.png)
 
   > Voici à quoi cela devrait ressembler.
 
@@ -159,7 +159,7 @@ De retour dans Unity, notez votre mélange de blendshapes et reproduisez-le dans
 
 - Sélectionnez approximativement le côté gauche de votre visage.
 
-  ![LeftSideSelection](img/LeftSideSelction.png)
+  ![LeftSideSelection](/img/LeftSideSelction.png)
 
 - Répétez le processus en sélectionnant `EyeClosedLeft`.
 
@@ -170,7 +170,7 @@ De retour dans Unity, notez votre mélange de blendshapes et reproduisez-le dans
 - Cliquez sur `Export`.
 - Cliquez sur `FBX`.
 
-![BlenderFBXExport](/customisation/img/BlenderFBXExport.png)
+![BlenderFBXExport](/img/BlenderFBXExport.png)
 
 - Sélectionnez l'emplacement de votre modèle personnalisé.
 
@@ -184,11 +184,11 @@ De retour dans Unity, notez votre mélange de blendshapes et reproduisez-le dans
 
 - Notez l'échelle de conversion des unités (ici, il s'agit de `1M/Unit`, mais cela peut également être `1cm/Unit`).
 
-![UnityImportScale](/customisation/img/UnityImportScale.png)
+![UnityImportScale](/img/UnityImportScale.png)
 
 - Dans la fenêtre « Export » de Blender, sélectionnez l'échelle d'exportation appropriée `1M/Unit = FBX All` et `1cm/Unit = All Local`
 
-![BlenderApplyScaling](/customisation/img/BlenderApplyScaling.png)
+![BlenderApplyScaling](/img/BlenderApplyScaling.png)
 
 - Appuyez sur `Export FBX`
 

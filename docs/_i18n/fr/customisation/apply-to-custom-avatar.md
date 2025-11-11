@@ -13,9 +13,9 @@ Vous devez d'abord trouver le fichier FBX principal qui contient la tête de vot
 Pour ce faire :
 
 - Sélectionnez-le dans la hiérarchie de votre scène en cliquant dessus avec le bouton gauche de la souris :
-  ![UnitySelectPrefab](img/UnitySelectPrefab.png)
+  ![UnitySelectPrefab](/img/UnitySelectPrefab.png)
 - Allez dans l'onglet Inspecteur (par défaut, à gauche).
-  ![UnityInspectorTab](img/UnityInspectorTab.png)
+  ![UnityInspectorTab](/img/UnityInspectorTab.png)
 - Cliquez sur le composant Armature de l'avatar (la petite icône verte représentant une personne).
 
 - Cela affichera le fichier dans l'explorateur de fichiers Unity
@@ -48,18 +48,18 @@ Pour ce faire :
 - Cliquez sur `Import`
 - Cliquez sur `FBX`
 
-![BlenderFBXImport](img/BlenderFBXImport.png)
+![BlenderFBXImport](/img/BlenderFBXImport.png)
 
 - Sélectionnez l'emplacement de votre modèle personnalisé
 
-![BlenderImportFBXFile](img/BlenderImportFBXFile.png)
+![BlenderImportFBXFile](/img/BlenderImportFBXFile.png)
 
 - Appuyez sur le bouton `Import FBX` en bas à gauche de la fenêtre.
 
 Votre modèle personnalisé devrait maintenant être dans Blender !
 N'hésitez pas à l'enregistrer dans un endroit sûr en appuyant sur `Ctrl`+`S` pour sauvegarder votre progression :)
 
-![CustomFBXImported](img/BlenderCustomFBXImported.png)
+![CustomFBXImported](/img/BlenderCustomFBXImported.png)
 
 ### Importer le modèle de face-tracking
 
@@ -74,25 +74,25 @@ Mêmes étapes que précédemment
 
 - Appuyez sur le bouton `Import FBX` en bas à gauche de la fenêtre.
 
-![BlenderFTFBXImported](img/BlenderFTFBXImported.png)
+![BlenderFTFBXImported](/img/BlenderFTFBXImported.png)
 
 ### Correspondance des matériaux
 
 - Développez ce qui se trouve sous l'armature qui devrait s'appeler `Armature.001` et sélectionnez le mesh de la tête avec le face-tracking (appelé `Body.001` la plupart du temps).
 
-- Sélectionnez l'onglet Matériaux ![MaterialsTabIcon](img/MaterialsTabIcon.png)
+- Sélectionnez l'onglet Matériaux ![MaterialsTabIcon](/img/MaterialsTabIcon.png)
 
 - Cliquez sur l'icône noire des materials pour modifier le material actuellement sélectionné
 
-![BrowseMaterials](img/BrowseMaterials.png)
+![BrowseMaterials](/img/BrowseMaterials.png)
 
 - Sélectionnez la version du material sans le « .001 » à la fin de son nom.
 
-![SelectMatWo.001](img/SelectMatWo.001.png)
+![SelectMatWo.001](/img/SelectMatWo.001.png)
 
 - Sélectionnez le material ci-dessous.
 
-![SelectMaterialBellow](img/SelectMaterialBellow.png)
+![SelectMaterialBellow](/img/SelectMaterialBellow.png)
 
 - Répétez le processus pour les autres materials
 
@@ -100,11 +100,11 @@ Mêmes étapes que précédemment
 
 - Développez ce qui se trouve sous l'armature qui devrait être nommée `Armature.001` et sélectionnez le mesh de la tête avec le face-tracking (appelé `Body.001` la plupart du temps).
 
-- Sélectionnez l'onglet "modifiers" ![ModifiersTabIcon](img/ModifiersTabIcon.png)
+- Sélectionnez l'onglet "modifiers" ![ModifiersTabIcon](/img/ModifiersTabIcon.png)
 
 - Cliquez sur le champ Objet
 
-![ObjectField](img/ObjectField.png)
+![ObjectField](/img/ObjectField.png)
 
 - Sélectionnez `Armature`
 
@@ -135,7 +135,7 @@ Mêmes étapes que précédemment
 - Cliquez sur `Export`
 - Cliquez sur `FBX`
 
-![BlenderFBXExport](img/BlenderFBXExport.png)
+![BlenderFBXExport](/img/BlenderFBXExport.png)
 
 - Sélectionnez l'emplacement de votre modèle personnalisé
 
@@ -149,11 +149,11 @@ Mêmes étapes que précédemment
 
 - Notez l'échelle de conversion des unités (ici, il s'agit de `1M/Unit`, mais cela peut également être `1cm/Unit`)
 
-![UnityImportScale](img/UnityImportScale.png)
+![UnityImportScale](/img/UnityImportScale.png)
 
 - Dans la fenêtre Blender Export, sélectionnez l'échelle d'exportation appropriée `1M/Unit = FBX All` et `1cm/Unit = All Local`.
 
-![BlenderApplyScaling](img/BlenderApplyScaling.png)
+![BlenderApplyScaling](/img/BlenderApplyScaling.png)
 
 - Appuyez sur `Export FBX`.
 
@@ -167,7 +167,7 @@ Mêmes étapes que précédemment
 - Dans le groupe `Per-Muscle Settings`, cliquez sur `Head` et développez les éléments suivants : `Eye Down-Up`, `Eye In-Out`, `Eye Down-Up`, `Eye In-Out`
 - Faites une capture d'écran pour mémoriser les paramètres
 
-![MusclesSettings](img/MusclesSettings.png)
+![MusclesSettings](/img/MusclesSettings.png)
 
 - Appuyez sur `Done`
 
@@ -185,7 +185,7 @@ Mêmes étapes que précédemment
 
 - Placez la deuxième fenêtre d'inspection côte à côte avec la fenêtre d'origine.
 
-![InspectorsSideBySide](img/InspectorsSideBySide.png)
+![InspectorsSideBySide](/img/InspectorsSideBySide.png)
 
 - Sélectionnez votre prefab.
 
@@ -193,7 +193,7 @@ Mêmes étapes que précédemment
 
 - Cliquez sur « Additive animation controller » dans la fenêtre d'inspection du prefab de face-tracking.
 
-![AnimationControllerHighlight](img/AnimationControllerHighlight.png)
+![AnimationControllerHighlight](/img/AnimationControllerHighlight.png)
 
 - Glissez-déposez le contrôleur d'animation mis en surbrillance dans l'emplacement additif de votre prefab
 
@@ -222,7 +222,7 @@ Veuillez noter que je ne fournirai pas d'assistance pour cette méthode de fusio
 - Cliquez sur `Manage Project`
 - Recherchez VRCFury
 - Cliquez sur le bouton `+`
-  ![AddVRCFurry](img/AddVRCFurry.png)
+  ![AddVRCFurry](/img/AddVRCFurry.png)
 - Revenez à Unity
 - Cliquez avec le bouton droit sur votre avatar
 - Cliquez sur `Create Empty`
@@ -230,7 +230,7 @@ Veuillez noter que je ne fournirai pas d'assistance pour cette méthode de fusio
 - Cliquez sur le bouton `Add Component`
 - Recherchez `Full Controller`
 
-  ![SearchFullController](img/SearchFullController.png)
+  ![SearchFullController](/img/SearchFullController.png)
 
 - Cliquez sur le texte `Full Controller (VRCFury)` pour ajouter le composant
 
@@ -255,19 +255,19 @@ Veuillez noter que je ne fournirai pas d'assistance pour cette méthode de fusio
 
 - Voici à quoi cela devrait ressembler :
 
-![VRCFuryComponentFilled](img/VRCFuryComponentFilled.png)
+![VRCFuryComponentFilled](/img/VRCFuryComponentFilled.png)
 
 ### Manuel
 
 - Assurez-vous que `Avatars 3.0 Manager` a été ajouté aux paquets de votre projet
 
-![AddAV3Manager](img/AddAV3Manager.png)
+![AddAV3Manager](/img/AddAV3Manager.png)
 
 #### FX
 
 - Ouvrez votre animateur en sélectionnant votre avatar, faites défiler jusqu'à `playable layers` et double-cliquez sur l'élément à côté de `FX`.
 
-  ![SelectFX](img/SelectFX.png)
+  ![SelectFX](/img/SelectFX.png)
 
 - Dupliquez-le en le sélectionnant et en appuyant sur `Ctrl` + `D`.
 
@@ -275,11 +275,11 @@ Veuillez noter que je ne fournirai pas d'assistance pour cette méthode de fusio
 
   - Pour ce faire, vous devrez comparer ce que vous avez ajouté au-dessus de votre contrôleur FX en ouvrant votre contrôleur d'animation et celui par défaut.
 
-    ![FXControllerDiff](img/FXControllerDiff.png)
+    ![FXControllerDiff](/img/FXControllerDiff.png)
 
     > Ici, par exemple, seule le layer `DressBand` a été ajoutée.
 
-    ![FXControllerPostDeletion](img/FXControllerPostDeletion.png)
+    ![FXControllerPostDeletion](/img/FXControllerPostDeletion.png)
 
     > Voici à quoi ressemble le mien après avoir supprimé les autres calques
 
@@ -289,17 +289,17 @@ Veuillez noter que je ne fournirai pas d'assistance pour cette méthode de fusio
 
 - Ouvrez la fenêtre d'AV3 Emulator.
 
-![OpenAV3MWindow](img/OpenAV3MWindow.png)
+![OpenAV3MWindow](/img/OpenAV3MWindow.png)
 
 - Glissez-déposez votre avatar dans l'emplacement prévu à cet effet.
 
 - Cliquez sur FX.
 
-![AV3MWindowFXClick](img/AV3MWindowFXClick.png)
+![AV3MWindowFXClick](/img/AV3MWindowFXClick.png)
 
 - Faites défiler vers le bas
 
-![AV3MWindowFXScrolledDown](img/AV3MWindowFXScrolledDown.png)
+![AV3MWindowFXScrolledDown](/img/AV3MWindowFXScrolledDown.png)
 
 - Cliquez sur `Add Controller to merge`
 
@@ -307,7 +307,7 @@ Veuillez noter que je ne fournirai pas d'assistance pour cette méthode de fusio
 
 - Cliquez sur `Clear All Suffixes`
 
-  ![AV3MClearAllSuffixes](img/AV3MClearAllSufixes.png)
+  ![AV3MClearAllSuffixes](/img/AV3MClearAllSufixes.png)
 
 - Cliquez sur `Merge on copy`
 
@@ -321,7 +321,7 @@ Veuillez noter que je ne fournirai pas d'assistance pour cette méthode de fusio
 - Glissez-déposez votre avatar.
 - Cliquez sur l'onglet parameters.
 
-![AV3MParametersTab](img/AV3MParametersTab.png)
+![AV3MParametersTab](/img/AV3MParametersTab.png)
 
 - Ajoutez vos paramètres isolés.
 - Cliquez sur `Copy parameters`
@@ -331,7 +331,7 @@ Veuillez noter que je ne fournirai pas d'assistance pour cette méthode de fusio
 - Sélectionnez votre menu existant en double-cliquant sur l'élément à côté du menu dans le menu déroulant « Expression » de l'avatar descriptor.
 - Cliquez sur le bouton `+`.
 
-![MenuAddButton](img/MenuAddButton.png)
+![MenuAddButton](/img/MenuAddButton.png)
 
 - Renommez le menu en `FT`.
 
@@ -341,4 +341,4 @@ Veuillez noter que je ne fournirai pas d'assistance pour cette méthode de fusio
 
 - Cliquez sur la petite cible à côté du sous-menu, recherchez `simple` et attribuez le sous-menu simple
 
-![MenuCompleted](img/MenuCompleated.png)
+![MenuCompleted](/img/MenuCompleated.png)
