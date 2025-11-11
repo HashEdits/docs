@@ -14,13 +14,13 @@ Supprimez le dossier `Hash's_Things/AvatarName/fbx`.
 
 - Allez en haut de votre fenêtre Unity et cliquez sur `Tools`->`Hash`->`AvatarName`.
 
-![PatchingWindow](../setup/img/SummonPatchingWindow.png)
+![PatchingWindow](/img/SummonPatchingWindow.png)
 
 > Certains auront plusieurs options pour différents prefabs, vous êtes libre de choisir celle que vous voulez ou de toutes les sélectionner.
 
 - Cliquez sur le bouton « Patch » dans la fenêtre qui s'ouvre.
 
-![alt text](../setup/img/PatcherWindow.png)
+![alt text](/img/PatcherWindow.png)
 
 ## Assurez-vous d'utiliser les mêmes contrôleurs d'animation que le prefab FT de base.
 

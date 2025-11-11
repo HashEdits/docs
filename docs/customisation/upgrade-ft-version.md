@@ -14,13 +14,13 @@ delete the folder `Hash's_Things/AvatarName/fbx`
 
 - Go at the top of your Unity window and click on `Tools`->`Hash`->`AvatarName`
 
-![PatchingWindow](../setup/img/SummonPatchingWindow.png)
+![PatchingWindow](/img/SummonPatchingWindow.png)
 
 > Some will have multiple options for different prefabs, you're free to do the one you want or all of them
 
 - Click the `Patch` button on the window that opens
 
-![alt text](../setup/img/PatcherWindow.png)
+![alt text](/img/PatcherWindow.png)
 
 ## Make sure you are using the same animation controllers as the base FT prefab
 
