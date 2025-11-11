@@ -54,7 +54,7 @@ export default defineConfig({
             text: "Personnalisation",
             items: [
               {
-                text: "Apply to custom avatar",
+                text: "Appliquer à un avatar personnalisé",
                 link: "/fr/customisation/apply-to-custom-avatar",
               },
               {
