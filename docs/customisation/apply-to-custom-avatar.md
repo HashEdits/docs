@@ -213,10 +213,12 @@ Modular Avatar is not supported because it does not re-order the ID of VRC layer
 
 Please note that I will not provide support for this way of merging my animation controllers
 
-> ⚠️ Double check that your animator follows the following:
->
-> - Doesn't have any states that sets the `Eyes & Eyelids` section of a [Animator Tracking Control](https://creators.vrchat.com/avatars/state-behaviors/#animator-tracking-control) animation state behavior to anything other than `No Change`
-> - Uses the `FacialExpressionsDisabled` to suppress any gestures (All normal gesture transitions should have a check on `FacialExpressionsDisabled` == `false` and have a default state with only a single any state condition: `FacialExpressionsDisabled` == `true`)
+::: warning
+Double check that your animator follows the following:
+
+- Doesn't have any states that sets the `Eyes & Eyelids` section of a [Animator Tracking Control](https://creators.vrchat.com/avatars/state-behaviors/#animator-tracking-control) animation state behavior to anything other than `No Change`
+- Uses the `FacialExpressionsDisabled` to suppress any gestures (All normal gesture transitions should have a check on `FacialExpressionsDisabled` == `false` and have a default state with only a single any state condition: `FacialExpressionsDisabled` == `true`)
+:::
 
 - Add VRCFury to your list of repositories by clicking [here](vcc://vpm/addRepo?url=https%3A%2F%2Fvcc.vrcfury.com)
 - Click `Manage Project`
@@ -283,7 +285,9 @@ Please note that I will not provide support for this way of merging my animation
 
     > This is what mine looks like after deleting the rest of the layers
 
-- ⚠️ Make sure that you don't have any states that sets the `Eyes & Eyelids` section of a [Animator Tracking Control](https://creators.vrchat.com/avatars/state-behaviors/#animator-tracking-control) animation state behavior to anything other than `No Change`
+::: warning
+Make sure that you don't have any states that sets the `Eyes & Eyelids` section of a [Animator Tracking Control](https://creators.vrchat.com/avatars/state-behaviors/#animator-tracking-control) animation state behavior to anything other than `No Change`
+:::
 
 - Assign the Face Tracking animator that corresponds to the name of your FX Controller with FT at the end of it
 
