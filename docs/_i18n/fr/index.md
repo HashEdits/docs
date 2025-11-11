@@ -6,7 +6,7 @@ hero:
   name: Hash Face Tracking
   tagline: Documentation sur la configuration des add-ons de face-tracking de Hash et conseils et astuces pour régler le face-tracking à votre convenance.
   image:
-    src: /img/headset.png
+    src: /headset.png
     alt: Logo
   actions:
     - theme: brand
