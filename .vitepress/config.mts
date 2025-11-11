@@ -8,6 +8,8 @@ export default defineConfig({
   title: "Hash Face Tracking",
   description: "Face Tracking by Hash",
 
+  appearance: 'force-dark',
+
   locales: {
     root: {
       label: "English",
