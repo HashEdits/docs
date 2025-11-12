@@ -10,7 +10,7 @@ hero:
     alt: Logo
   actions:
     - theme: brand
-      text: Configuration
+      text: Instalation
       link: /fr/setup
     - theme: alt
       text: Appliquer à un avatar personnalisé

@@ -2,7 +2,9 @@
 
 ## The avatar version listed on the store page is no longer available
 
-If the specific avatar package version is not available anymore please contact me trough Booth DMs [here](https://hashedits.booth.pm/conversations).
+If the specific avatar package version is not available anymore please contact me trough Booth DMs By clicking the mail icon on [my Booth page](https://hashedits.booth.pm/)
+
+![SendMessageButton](/img/SendMessageButton.png)
 
 I will try my best to provide an update to retain compatibility as fast as possible
 
@@ -103,7 +105,7 @@ Back in unity take note of your blendshape mix and reproduce it in blender
 
 - Click the little down arrow bellow the `-` button
 
-- Click `New Shape from mix`
+- Click `New Shape from Mix`
 
   ![ShapeKeyMenuMix](/img/ShapeKeyMenuMix.png)
 
@@ -192,7 +194,7 @@ Back in unity take note of your blendshape mix and reproduce it in blender
 
 - Press `Export FBX`
 
-You're done!
+### You're done!
 
 ## Eye rotation broken
 

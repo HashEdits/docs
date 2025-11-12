@@ -1,4 +1,4 @@
-# Configuration
+# Instalation
 
 Cette section de la documentation explique comment installer l'un des add-on de Face Tracking de Hash sans aucune connaissance préalable de la création d'avatars VRChat.
 
@@ -8,11 +8,15 @@ Cliquez sur le bouton de téléchargement et décompressez l'archive si vous ave
 
 ## Téléchargez la version appropriée de l'avatar.
 
-Consultez la fiche produit de l'add-on dans la boutique. Vous y trouverez une version de l'avatar compatible avec l'add-on'.
+Consultez la déscription du produit de l'add-on dans la boutique. Vous y trouverez la version de l'avatar compatible avec l'add-on.
 
-Téléchargez-la également sur Booth.
+Une fois l'avatar acheté téléchargez-la sur Booth.
 
-Si la version spécifique du pack avatar n'est plus disponible, veuillez me contacter via les messages privés de Booth [ici](https://hashedits.booth.pm/conversations).
+Si la version spécifique de l'add-on n'est plus disponible, veuillez me contacter via les messages privés de Booth en cliquant sur l'icone de lettre sur [ma page Booth](https://hashedits.booth.pm/)
+
+![SendMessageButton](/img/SendMessageButton.png)
+
+Je ferai de mon mieux pour fournir une mise à jour afin de maintenir la compatibilité le plus vite possible.
 
 ## Ouvrez Unity
 
@@ -24,13 +28,13 @@ Ouvrez votre [VRChat Creator Companion](https://vcc.docs.vrchat.com/) et créez 
 
 Faites glisser et déposez le fichier .UnityPackage de l'avatar vers la fenêtre de l'éditeur Unity de votre projet.
 
-Cliquez sur « Importer » dans la fenêtre qui s'affiche.
+Cliquez sur `Import` sur la fenêtre qui s'affiche.
 
 ## Importer mon add-on
 
 Faites glisser et déposez le fichier .UnityPackage de mon add-on vers la fenêtre de l'éditeur Unity de votre projet.
 
-Cliquez sur « Importer » dans la fenêtre qui s'affiche.
+Cliquez sur `Import` sur la fenêtre qui s'affiche.
 
 ## Générer le modèle de face-tracking
 
@@ -52,11 +56,11 @@ Cliquez sur « Importer » dans la fenêtre qui s'affiche.
 
 - Glissez-déposez le prefab que vous souhaitez utiliser dans votre scène.
 
-## Télécharger vers VRChat
+## Upload sur VRChat
 
 - Ouvrez la fenêtre VRChatSDK en cliquant sur `VRCSDK`->`Show Control Panel` en haut de votre fenêtre Unity.
 - Connectez-vous à votre compte VRChat.
-- Allez dans l'onglet « Builder ».
+- Allez dans l'onglet `Builder`.
 - Donnez un nom à votre avatar
 - Capturez une image d'aperçu pour votre avatar
 - Acceptez les conditions en bas de la fenêtre

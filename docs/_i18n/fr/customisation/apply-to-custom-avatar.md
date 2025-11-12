@@ -4,7 +4,7 @@ Vous avez donc un avatar personnalisé et souhaitez utiliser mon face-tracking d
 
 ## Remplacement de la tête
 
-Vous devrez remplacer la tête de votre modèle personnalisé par celle qui dispose des blendshapes de face-tracking et des bonnes weights.
+Vous devrez remplacer la tête de votre modèle personnalisé par celle qui dispose des blendshapes de face-tracking et des bons weights pour les os des yeux.
 Voici quelques étapes à suivre pour y parvenir.
 
 ### Localisez le fichier FBX principal de votre modèle personnalisé et sauvegardez-le.
@@ -25,7 +25,7 @@ Pour ce faire :
 - Décochez `Include dependencies` dans la fenêtre qui s'ouvre
 - Appuyez sur `Export...`
 - Sélectionnez l'emplacement où vous souhaitez stocker votre sauvegarde
-- Revenez à Unity
+- Revenez sur Unity
 - Cliquez à nouveau avec le bouton droit sur le fichier
 - Cliquez sur `Show In Explorer`
 
@@ -141,7 +141,7 @@ Mêmes étapes que précédemment
 
 - Cliquez sur le fichier
 
-- Revenez à Unity
+- Revenez sur Unity
 
 - Sélectionnez votre fichier FBX personnalisé dans l'explorateur de fichiers Unity
 
@@ -175,6 +175,8 @@ Mêmes étapes que précédemment
 
 - Entrez les paramètres que vous avez capturés précédemment
 
+- Une fois fini cliquez sur `done` et cliquez `apply` sur le pop up qui apparait
+
 ## Attribuez le menu, les paramètres et les contrôleurs d'animation
 
 - Glissez-déposez le prefab de face-tracking dans votre scène
@@ -183,7 +185,7 @@ Mêmes étapes que précédemment
 
 - Cliquez sur `Properties`
 
-- Placez la deuxième fenêtre d'inspection côte à côte avec la fenêtre d'origine.
+- Placez la deuxième fenêtre d'inspecteur côte à côte avec la fenêtre d'origine.
 
 ![InspectorsSideBySide](/img/InspectorsSideBySide.png)
 
@@ -205,7 +207,7 @@ Mêmes étapes que précédemment
 
 ## Fusionner avec des configurations existantes : logique supplémentaire
 
-Cette section est intéressante si vous disposez d'une logique de contrôleur d'animation existante qui permet d'activer des boutons ou des systèmes personnalisés sur votre avatar.
+Cette section est intéressante si vous disposez d'une logique de contrôleur d'animation existante qui permet d'activer des toggles ou des systèmes personnalisés sur votre avatar. 
 
 Modular Avatar n'est pas pris en charge car il ne réorganise pas l'ID des layer drivers de VRC, ce qui perturbe ma logique de smoothing.
 
@@ -216,8 +218,8 @@ Veuillez noter que je ne fournirai pas d'assistance pour cette méthode de fusio
 ::: warning ATTENTION
 Vérifiez que votre animateur respecte les points suivants :
 
-- Il ne dispose d'aucun état qui définit la section `Eyes & Eyelids` d'un  [Animator Tracking Control](https://creators.vrchat.com/avatars/state-behaviors/#animator-tracking-control) animation state behavior sur une valeur autre que `No Change`.
-- Utilise `FacialExpressionsDisabled` pour supprimer tous les gestes (toutes les transitions de gesture normales doivent avoir une condition sur `FacialExpressionsDisabled` == `false` et avoir un état par défaut avec une seule condition d'état : `FacialExpressionsDisabled` == `true`)
+- Il ne dispose d'aucun état qui définit la section `Eyes & Eyelids` d'un animation state behavior [Animator Tracking Control](https://creators.vrchat.com/avatars/state-behaviors/#animator-tracking-control) sur une valeur autre que `No Change`.
+- Utilise `FacialExpressionsDisabled` pour mutter tout les gesture expressions (toutes les transitions de gesture normales doivent avoir une condition sur `FacialExpressionsDisabled` == `false` et avoir un état par défaut avec une seule condition d'état : `FacialExpressionsDisabled` == `true`)
 :::
 
 - Ajoutez VRCFury à votre liste de dépôts en cliquant [ici](vcc://vpm/addRepo?url=https%3A%2F%2Fvcc.vrcfury.com)
@@ -225,8 +227,8 @@ Vérifiez que votre animateur respecte les points suivants :
 - Recherchez VRCFury
 - Cliquez sur le bouton `+`
   ![AddVRCFurry](/img/AddVRCFurry.png)
-- Revenez à Unity
-- Cliquez avec le bouton droit sur votre avatar
+- Revenez sur Unity
+- Cliquez droit sur votre avatar
 - Cliquez sur `Create Empty`
 - Donnez-lui un nom qui a du sens (par exemple : `VRCFHashFT`)
 - Cliquez sur le bouton `Add Component`
@@ -309,7 +311,7 @@ Assurez-vous qu'aucun état ne définit la section `Eyes & Eyelids` d'un [Animat
 
 - Glissez-déposez la copie de votre contrôleur FX contenant uniquement votre logique d'animation
 
-- Cliquez sur `Clear All Suffixes`
+- Cliquez sur `Clear all suffixes`
 
   ![AV3MClearAllSuffixes](/img/AV3MClearAllSufixes.png)
 
@@ -346,3 +348,10 @@ Assurez-vous qu'aucun état ne définit la section `Eyes & Eyelids` d'un [Animat
 - Cliquez sur la petite cible à côté du sous-menu, recherchez `simple` et attribuez le sous-menu simple
 
 ![MenuCompleted](/img/MenuCompleated.png)
+
+## Vous avez terminé !
+
+Normalement vous pouvez upload votre avatar sur VRChat et votre face tracking devrait marcher sur votre avatar personalisé,
+Si vous avez des problèmes après avoir suivi ce guide je suis joignable via les messages privés de Booth en cliquant sur l'icone de lettre sur [ma page Booth](https://hashedits.booth.pm/)
+
+![SendMessageButton](/img/SendMessageButton.png)

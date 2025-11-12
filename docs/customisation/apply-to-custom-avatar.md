@@ -185,6 +185,8 @@ Same steps as before
 
 - Put the second inspector window side by side with the original one
 
+- Once you are done click the `done` button and clikc `apply` on the pop up that appears
+
 ![InspectorsSideBySide](/img/InspectorsSideBySide.png)
 
 - Select your prefab
@@ -309,7 +311,7 @@ Make sure that you don't have any states that sets the `Eyes & Eyelids` section 
 
 - Drag and drop the duplicate of your FX Controller with only your animation logic
 
-- Click `Clear All Suffixes`
+- Click `Clear all suffixes`
 
   ![AV3MClearAllSuffixes](/img/AV3MClearAllSufixes.png)
 
@@ -346,3 +348,9 @@ Make sure that you don't have any states that sets the `Eyes & Eyelids` section 
 - Click the little target next to sub menu and search for `simple` and assign the simple sub menu
 
 ![MenuCompleted](/img/MenuCompleated.png)
+
+## You're done !
+
+You should now be ready to upload your custom avatar with my face tracking to VRChat, if you're running into issues I am avaliable trough Booth DMs By clicking the mail icon on [my Booth page](https://hashedits.booth.pm/)
+
+![SendMessageButton](/img/SendMessageButton.png)

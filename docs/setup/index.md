@@ -12,7 +12,9 @@ Please look at the store listing of the add-on and there should be a version of 
 
 Download that off of Booth as well.
 
-If the specific avatar package version is not available anymore please contact me trough Booth DMs [here](https://hashedits.booth.pm/conversations)
+If the specific avatar package version is not available anymore please contact me trough Booth DMs By clicking the mail icon on [my Booth page](https://hashedits.booth.pm/)
+
+![SendMessageButton](/img/SendMessageButton.png)
 
 ## Open Unity
 
@@ -24,7 +26,7 @@ Open your [VRChat Creator Companion](https://vcc.docs.vrchat.com/) and create or
 
 Drag and drop the .UnityPackage of the avatar above your unity editor window of your project
 
-Click "import" on the window that pops up
+Click `import` on the window that pops up
 
 ## Import my add-on
 
@@ -56,7 +58,7 @@ Click "import" on the window that pops up
 
 - Open the VRChatSDK window by clicking `VRCSDK`->`Show Control Panel` at the top of your unity window
 - Log-in to your VRChat account
-- Go to the builder Tab
+- Go to the `Builder` Tab
 - Put in a name for your avatar
 - Capture a preview image for your avatar
 - Accept the terms at the bottom of the window

@@ -1,5 +1,9 @@
 # Hash Face Tracking Documentation
 
+This is the repository for the vitepress website version of Hash's face tracking add-ons doccumentation on how to install and customise them.
+
+## [hashedits.github.io/docs](https://hashedits.github.io/docs/)
+
 ## How to contribute
 
 > [!IMPORTANT]  

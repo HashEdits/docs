@@ -2,9 +2,11 @@
 
 ## La version de l'avatar indiquée sur la page de la boutique n'est plus disponible.
 
-Si la version spécifique du pack d'avatar n'est plus disponible, veuillez me contacter via les messages privés Booth [ici](https://hashedits.booth.pm/conversations).
+Si la version spécifique de l'add-on n'est plus disponible, veuillez me contacter via les messages privés de Booth en cliquant sur l'icone de lettre sur [ma page Booth](https://hashedits.booth.pm/)
 
-Je ferai de mon mieux pour fournir une mise à jour afin de maintenir la compatibilité aussi rapidement que possible.
+![SendMessageButton](/img/SendMessageButton.png)
+
+Je ferai de mon mieux pour fournir une mise à jour afin de maintenir la compatibilité le plus vite possible.
 
 ## J'ai ajusté mon avatar avec des blendshapes et un clipping se produit lorsque je cligne des yeux
 
@@ -111,7 +113,7 @@ De retour dans Unity, notez votre mélange de blendshapes et reproduisez-le dans
 
 - Appuyez sur le petit `X` sur la même ligne que la case à cocher `Relative`.
 
-- Faites défiler vers le bas jusqu'à `Copy the name of your shapekey mix` (vous pouvez double-cliquer sur le nom pour sélectionner le texte) (dans mon cas, c'est `Key 241`).
+- Faites défiler vers le bas jusqu'à `Copy the name of your shapekey Mix` (vous pouvez double-cliquer sur le nom pour sélectionner le texte) (dans mon cas, c'est `Key 241`).
 
   ![ShapeKeyMixCreated](/img/ShapeKeyMixCreated.png)
 
@@ -192,9 +194,9 @@ De retour dans Unity, notez votre mélange de blendshapes et reproduisez-le dans
 
 - Appuyez sur `Export FBX`
 
-Vous avez terminé !
+### Vous avez terminé !
 
-## Rotation des yeux défectueuse
+## Rotation des yeux cassé
 
 Ceci est probablement dû au fait que le composant avatar ne fait pas référence aux bons bones des yeux, ce qui peut être causé par plusieurs facteurs différents :
 
@@ -226,7 +228,7 @@ Pour le résoudre :
 - Horloge et région.
 - Région.
 - Sélectionnez `Administration` en haut de la fenêtre.
-- Cliquez sur `Modify global settings` sous `Language for non Unicode programs`.
+- Cliquez sur `Modifier les paramètres régionaux` sous `Language pour les programmes non Unicode`.
 - Sélectionnez `English (United States)`.
 
 > Vous pouvez annuler les modifications après avoir patché le modèle.

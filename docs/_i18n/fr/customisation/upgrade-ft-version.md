@@ -1,6 +1,6 @@
 # Mise à jour de la version du face tracking
 
-De temps en temps, je revisite certains de mes add-ons de face tracking afin de les mettre à jour en fonction de mes dernières découvertes. Voici un guide expliquant comment procéder à la mise à jour :
+De temps en temps, je revisite certains de mes add-ons de face tracking afin de les mettre à jour en fonction de mes dernières découvertes. Voici un guide expliquant comment procéder à une mise à jour :
 
 ## Créez des prefabs de votre ou vos avatar(s).
 
@@ -16,9 +16,9 @@ Supprimez le dossier `Hash's_Things/AvatarName/fbx`.
 
 ![PatchingWindow](/img/SummonPatchingWindow.png)
 
-> Certains auront plusieurs options pour différents prefabs, vous êtes libre de choisir celle que vous voulez ou de toutes les sélectionner.
+> Certains auront plusieurs options pour différents prefabs, vous êtes libre de choisir celle que vous voulez ou de toutes les ouvrires.
 
-- Cliquez sur le bouton « Patch » dans la fenêtre qui s'ouvre.
+- Cliquez sur le bouton `Patch` dans la fenêtre qui s'ouvre.
 
 ![alt text](/img/PatcherWindow.png)
 
