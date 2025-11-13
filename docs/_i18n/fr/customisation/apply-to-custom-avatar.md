@@ -213,6 +213,9 @@ Modular Avatar n'est pas pris en charge car il ne réorganise pas l'ID des layer
 
 ### VRCFury
 
+<details>
+<summary>Cliquez ici pour afficher les détails</summary>
+
 Veuillez noter que je ne fournirai pas d'assistance pour cette méthode de fusion de mes contrôleurs d'animation.
 
 ::: warning ATTENTION
@@ -261,7 +264,12 @@ Vérifiez que votre animateur respecte les points suivants :
 
 ![VRCFuryComponentFilled](/img/VRCFuryComponentFilled.png)
 
+</details>
+
 ### Manuel
+
+<details>
+<summary>Cliquez ici pour afficher les détails</summary>
 
 - Assurez-vous que `Avatars 3.0 Manager` a été ajouté aux paquets de votre projet
 
@@ -348,6 +356,8 @@ Assurez-vous qu'aucun état ne définit la section `Eyes & Eyelids` d'un [Animat
 - Cliquez sur la petite cible à côté du sous-menu, recherchez `simple` et attribuez le sous-menu simple
 
 ![MenuCompleted](/img/MenuCompleated.png)
+
+</details>
 
 ## Vous avez terminé !
 

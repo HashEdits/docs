@@ -213,6 +213,9 @@ Modular Avatar is not supported because it does not re-order the ID of VRC layer
 
 ### VRCFury
 
+<details>
+<summary>Click here to show details</summary>
+
 Please note that I will not provide support for this way of merging my animation controllers
 
 ::: warning
@@ -260,8 +263,12 @@ Double check that your animator follows the following:
 - This is what it should look like:
 
 ![VRCFuryComponentFilled](/img/VRCFuryComponentFilled.png)
+</details>
 
 ### Manual
+
+<details>
+<summary>Click here to show details</summary>
 
 - Make sure you have `Avatars 3.0 Manager` added to your project's packages
 
@@ -348,6 +355,8 @@ Make sure that you don't have any states that sets the `Eyes & Eyelids` section 
 - Click the little target next to sub menu and search for `simple` and assign the simple sub menu
 
 ![MenuCompleted](/img/MenuCompleated.png)
+
+</details>
 
 ## You're done !
 
