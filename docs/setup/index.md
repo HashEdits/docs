@@ -24,15 +24,15 @@ Open your [VRChat Creator Companion](https://vcc.docs.vrchat.com/) and create or
 
 ## Import the avatar
 
-Drag and drop the .UnityPackage of the avatar above your unity editor window of your project
+Drag and drop the `.UnityPackage` of the avatar above your unity editor window of your project
 
-Click `import` on the window that pops up
+Click `Import` on the window that pops up
 
 ## Import my add-on
 
-Drag and drop the .UnityPackage of my add-on above your unity editor window of your project
+Drag and drop the `.UnityPackage` of my add-on above your unity editor window of your project
 
-Click "import" on the window that pops up
+Click `Import` on the window that pops up
 
 ## Generate the Face tracking model
 
