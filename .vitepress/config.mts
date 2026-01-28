@@ -67,10 +67,39 @@ export default defineConfig({
         ],
       },
     },
+    ja: {
+      label: "Japanese",
+      lang: "ja",
+      themeConfig: {
+        nav: [
+          { text: "セットアップ", link: "/ja/setup/" },
+          { text: "よくある問題", link: "/ja/common-issues/" },
+        ],
+
+        sidebar: [
+          { text: "セットアップ", link: "/ja/setup/" },
+          {
+            text: "カスタマイズ",
+            items: [
+              {
+                text: "カスタムアバターに適用",
+                link: "/ja/customisation/apply-to-custom-avatar",
+              },
+              {
+                text: "FT バージョンをアップグレード",
+                link: "/ja/customisation/upgrade-ft-version",
+              },
+            ],
+          },
+          { text: "よくある問題", link: "/ja/common-issues/" },
+        ],
+      },
+    },
   },
 
   rewrites: {
     "_i18n/fr/:slug*": "fr/:slug*",
+    "_i18n/ja/:slug*": "ja/:slug*",
   },
 
   themeConfig: {
