@@ -10,7 +10,7 @@ hero:
     alt: Logo
   actions:
     - theme: brand
-      text: Instalation
+      text: インスタルする
       link: /ja/setup
     - theme: alt
       text: カスタムアバターへ適用する
