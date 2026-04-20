@@ -238,3 +238,24 @@ Pour le résoudre :
 Cela est probablement dû au fait que l'avatar dispose d'une animation de visage au repos qui réinitialise tout ou partie de votre configuration personnalisée des blendshapes.
 
 Pour résoudre ce problème, enregistrez votre configuration personnalisée par-dessus cette animation au repos.
+
+## J'utilise un Pico 4 Pro et ma lèvre supèrieure est toujours levée :/
+
+Malhereusement le Pico 4 Pro à l'air de rapporter une valeur significative de `Nose Sneer` lorceque une expression neutre est maintenue.
+
+Vu que cette valeur est significative il ne m'est pas possible d'adresser se problème sans rendre la qualité de suivi singificativement moindre pour les autres systèmes de suivi.
+
+Cependant vous pouvez le fixer vous même en suivant ces étapes:
+
+- Va dans la page `Tracking Settings`de VRCFT's (c'est le petit crayon sur la partie gauche de l'app)
+
+![VRCFTTrackingSettingsFind](/img/VRCFTTrackingSettingsFind.png)
+
+- Ensuite active les `Parameter Adjustment` en cliquant sur la bascule et développe la liste des paramètres en cliquant sur la petite fleche à droite sur la même ligne
+
+![VRCFTTRackingSettingsEnable](/img/VRCFTTRackingSettingsEnable.png)
+
+
+- Et enfin fait glisser la partie du slider la plus proche de 0 sur la ligne correspondant à l'expression `Nose Sneer` j'usqu'a ce que ta tête reviennes à une expression neutre
+
+![VRCFTTRackingSettingsNoseSneerDeadZone](/img/VRCFTTRackingSettingsNoseSneerDeadZone.png)

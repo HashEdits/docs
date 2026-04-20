@@ -54,7 +54,7 @@ To do so:
 
 ![BlenderImportFBXFile](/img/BlenderImportFBXFile.png)
 
-- Press the `Import FBX` button at the bottom left of the window
+- Press the `Import FBX` button at the bottom right of the window
 
 Your custom model should now be into Blender!
 Feel free to save it somewhere safe by pressing `Ctrl`+`S` to save your progress :)

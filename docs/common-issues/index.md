@@ -238,3 +238,24 @@ This can be solved by:
 This is likely because the avatar has a resting face animation which resets some or all of your custom blendshapes configuration,
 
 This can be fixed by recording your custom configuration on top of that resting animation
+
+## I'm using a Pico 4 Pro and my upper lip is always tucked upward :/
+
+Unfortunatelly the Pico 4 Pro seems to report a significant amount of `Nose Sneer` expression when doing a resting face expression.
+
+Since that amount is quite high it is not possible for me to address the issue without making tracking quality worse for other tracking interfaces.
+
+However you can fix it yourself by following the following steps:
+
+- Go to VRCFT's tracking settings tab (little pen icon on the left side of the app)
+
+![VRCFTTrackingSettingsFind](/img/VRCFTTrackingSettingsFind.png)
+
+- Then enable `Parameter Adjustment` by clicking the toggle and developp the list by clicking on the little arrow to the right
+
+![VRCFTTRackingSettingsEnable](/img/VRCFTTRackingSettingsEnable.png)
+
+
+- Finally slide the bit of the `Nose Sneer` slider closer to 0 up until your face's back to a resting expression
+
+![VRCFTTRackingSettingsNoseSneerDeadZone](/img/VRCFTTRackingSettingsNoseSneerDeadZone.png)

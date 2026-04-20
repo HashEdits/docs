@@ -72,7 +72,7 @@
 
 - フェイストラッキングモデルの保存場所を選択します（`Hash's_Things/AvatarName/fbx` 配下）
 
-- 左下の `Import FBX` ボタンをクリックします
+- 右下の Import FBX ボタンをクリックします
 
 ![BlenderFTFBXImported](/img/BlenderFTFBXImported.png)
 
