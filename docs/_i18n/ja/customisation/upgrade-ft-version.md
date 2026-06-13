@@ -6,9 +6,24 @@
 
 Unity のファイルエクスプローラーにアバターをドラッグ＆ドロップし、ダイアログが表示された場合は `Create Original Prefab` をクリックします。
 
+## UnityPackage としてバックアップする
+
+プレハブを右クリックし、`Export Package ...` をクリックします。表示されたウィンドウで `Export` をクリックしてください。
+
+![PatchingWindow](/img/ExportAsUnityPackage.gif)
+
 ## FBX を削除する
 
 `Hash's_Things/AvatarName/fbx` フォルダを削除します。
+
+## パッチャーフォルダを削除する
+
+`Hash's_Things/AvatarName/Patcher` フォルダを削除します。
+
+## プロジェクトに新しいフェイストラッキングパッケージをインポートする
+
+Booth または Ko-fi からダウンロードした UnityPackage を Unity ウィンドウへドラッグ＆ドロップし、表示されたウィンドウ下部の `Import` をクリックします。
+
 
 ## 初回と同じようにモデルをパッチする
 

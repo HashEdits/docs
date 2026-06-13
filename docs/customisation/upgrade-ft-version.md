@@ -6,9 +6,23 @@ Every so often I will revisit some of my face tracking add-ons to keep them up t
 
 Drag and drop your avatar(s) in your unity file explorer and click `Create Original Prefab` if a dialog box opens
 
+## Back it up as a UnityPackage
+
+Right click on your prefab, click `Export Package ...` and then `Export` on the new window that appears
+
+![PatchingWindow](/img/ExportAsUnityPackage.gif)
+
 ## Delete the fbx
 
 delete the folder `Hash's_Things/AvatarName/fbx`
+
+## Delete the patcher folder
+
+delete the folder `Hash's_Things/AvatarName/Patcher`
+
+## Import the new face tracking package in your project
+
+Drag and drop the UnityPackage file you've downloaded from Booth or Kofi above your unity window and click `Import` at the bottom of the new window that apears
 
 ## Patch the model like you did the first time
 

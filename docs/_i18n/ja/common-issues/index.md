@@ -241,4 +241,20 @@ Unity に戻り、現在使用しているブレンドシェイプの組み合�
 
 ## Pico 4 Proを使っているのですが、上唇がいつも上に引き上がってしまいます :/
 
-翻訳はまだ利用できません
+残念ながら、Pico 4 Pro は無表情の状態でも `Nose Sneer` の値をかなり大きく送信してしまうようです。
+
+この値は比較的大きいため、他のトラッキングデバイスの精度に影響を与えずにこちらで対処することができません。
+
+ただし、以下の手順で自分で調整することができます。
+
+- VRCFT の Tracking Settings タブ（アプリ左側にあるペンのアイコン）を開きます
+
+![VRCFTTrackingSettingsFind](/img/VRCFTTrackingSettingsFind.png)
+
+- `Parameter Adjustment` を有効にし、右側の小さな矢印をクリックしてリストを展開します
+
+![VRCFTTRackingSettingsEnable](/img/VRCFTTRackingSettingsEnable.png)
+
+- `Nose Sneer` のスライダーを 0 に近づける方向へ調整し、顔が自然な無表情になるまで値を下げます
+
+![VRCFTTRackingSettingsNoseSneerDeadZone](/img/VRCFTTRackingSettingsNoseSneerDeadZone.png)

@@ -6,9 +6,24 @@ De temps en temps, je revisite certains de mes add-ons de face tracking afin de 
 
 Glissez-déposez votre ou vos avatar(s) dans l'explorateur de fichiers Unity et cliquez sur `Create Original Prefab` si une boîte de dialogue s'ouvre.
 
+## Faites une sauvegarde avec un UntiyPackage
+
+Faites click droit sur votre prefab, clickez `Export Package ...` puis sur `Export` dans la nouvelle fenêtre qui apparait
+
+![PatchingWindow](/img/ExportAsUnityPackage.gif)
+
 ## Supprimer le fbx
 
 Supprimez le dossier `Hash's_Things/AvatarName/fbx`.
+
+## Supprimer le patcher
+
+Supprimez le dossier `Hash's_Things/AvatarName/Patcher`.
+
+
+## Importer le nouveau package de face tracking dans votre projet
+
+Glissez et déposer le UnityPackage que vous avez télécharger depuis Booth out KoFi sur votre fenettre Unity et clickez `Import` sur la fenetre qui apparait
 
 ## Patchez le modèle comme vous l'avez fait la première fois.
 
