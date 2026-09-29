@@ -118,6 +118,16 @@ Same steps as before
 
 - Release your left click
 
+### Delete the original head
+
+- Select the original head (named `Body` most times) in the scene collection tab
+
+- Press the `Del` key on your keyboard
+
+- Double click on the face tracking head
+
+- Press the `backspace` 4 times to remove the `.001` at the end of the name
+
 ### Delete the rest of the face tracking fbx
 
 - Select `Armature.001`

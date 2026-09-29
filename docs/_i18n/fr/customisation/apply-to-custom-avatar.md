@@ -128,6 +128,16 @@ Mêmes étapes que précédemment
 
 - Appuyez sur `Del`
 
+### Supprimez la tête originale
+
+- Selectionnez la tête originale dans la fenetre scene collection
+
+- Appuyez sur la touche `Del`
+
+- Double cliquez sur la tête avec le face tracking dans la fenetre scene collection
+
+- Appuyez sur la touche retour arrière pour retirer le `.001` à la fin du nom
+
 ### Exportez votre travail
 
 - Dirigez-vous en haut à gauche de votre fenêtre
