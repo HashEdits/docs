@@ -1,7 +1,8 @@
-import { defineConfig } from "vitepress";
+import { defineVersionedConfig } from '@viteplus/versions';
+import { join } from 'path/posix';
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default defineVersionedConfig({
   srcDir: "docs",
   base: "/docs/",
 
@@ -9,6 +10,20 @@ export default defineConfig({
   description: "Face Tracking by Hash",
 
   appearance: "force-dark",
+
+  versionsConfig: {
+    current: 'next',
+    latest: 'v1',
+    // hooks: {
+    //   rewritesHook(source: string, version: string, locale: string): string {
+    //       if (version == "v1" || version == "latest")
+    //       {
+    //         return join(locale, source);
+    //       }
+    //       return join(locale, version, source);
+    //   }
+    // }
+  },
 
   locales: {
     root: {
@@ -44,26 +59,26 @@ export default defineConfig({
       lang: "fr",
       themeConfig: {
         nav: [
-          { text: "Installation", link: "/fr/setup/" },
-          { text: "Problème courants", link: "/fr/common-issues/" },
+          { text: "Installation", link: "/setup/" },
+          { text: "Problème courants", link: "/common-issues/" },
         ],
 
         sidebar: [
-          { text: "Installation", link: "/fr/setup/" },
+          { text: "Installation", link: "/setup/" },
           {
             text: "Personnalisation",
             items: [
               {
                 text: "Appliquer à un avatar personnalisé",
-                link: "/fr/customisation/apply-to-custom-avatar",
+                link: "/customisation/apply-to-custom-avatar",
               },
               {
                 text: "Mettre à jour la version du FT",
-                link: "/fr/customisation/upgrade-ft-version",
+                link: "/customisation/upgrade-ft-version",
               },
             ],
           },
-          { text: "Problème courants", link: "/fr/common-issues/" },
+          { text: "Problème courants", link: "/common-issues/" },
         ],
       },
     },
@@ -72,34 +87,35 @@ export default defineConfig({
       lang: "ja",
       themeConfig: {
         nav: [
-          { text: "セットアップ", link: "/ja/setup/" },
-          { text: "よくある問題", link: "/ja/common-issues/" },
+          { text: "セットアップ", link: "/setup/" },
+          { text: "よくある問題", link: "/common-issues/" },
         ],
 
         sidebar: [
-          { text: "セットアップ", link: "/ja/setup/" },
+          { text: "セットアップ", link: "/setup/" },
           {
             text: "カスタマイズ",
             items: [
               {
                 text: "カスタムアバターに適用",
-                link: "/ja/customisation/apply-to-custom-avatar",
+                link: "/customisation/apply-to-custom-avatar",
               },
               {
                 text: "FT バージョンをアップグレード",
-                link: "/ja/customisation/upgrade-ft-version",
+                link: "/customisation/upgrade-ft-version",
               },
             ],
           },
-          { text: "よくある問題", link: "/ja/common-issues/" },
+          { text: "よくある問題", link: "/common-issues/" },
         ],
       },
     },
   },
 
   rewrites: {
-    "_i18n/fr/:slug*": "fr/:slug*",
-    "_i18n/ja/:slug*": "ja/:slug*",
+    "src/en/:slug*": "/:slug*",
+    "src/fr/:slug*": "fr/:slug*",
+    "src/ja/:slug*": "ja/:slug*",
   },
 
   themeConfig: {
