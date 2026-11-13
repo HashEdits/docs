@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: Hash Face Tracking (v2)
+  name: Hash Face Tracking
   tagline: Hash のフェイストラッキング用アドオンのセットアップ方法に関するドキュメントと、フェイストラッキングを自分好みに調整するためのヒントやコツ
   image:
     src: /headset.png

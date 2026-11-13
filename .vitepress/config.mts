@@ -1,5 +1,4 @@
 import { defineVersionedConfig } from '@viteplus/versions';
-import { join } from 'path/posix';
 
 // https://vitepress.dev/reference/site-config
 export default defineVersionedConfig({
@@ -13,16 +12,8 @@ export default defineVersionedConfig({
 
   versionsConfig: {
     current: 'next',
-    latest: 'v1',
-    // hooks: {
-    //   rewritesHook(source: string, version: string, locale: string): string {
-    //       if (version == "v1" || version == "latest")
-    //       {
-    //         return join(locale, source);
-    //       }
-    //       return join(locale, version, source);
-    //   }
-    // }
+    latest: 'latest',
+    versionSwitcher: false
   },
 
   locales: {
@@ -112,16 +103,17 @@ export default defineVersionedConfig({
     },
   },
 
-  rewrites: {
-    "src/en/:slug*": "/:slug*",
-    "src/fr/:slug*": "fr/:slug*",
-    "src/ja/:slug*": "ja/:slug*",
-  },
-
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
     outline: "deep",
+
+    nav: {
+      root: [ 
+        // Add the version switcher component
+        { component: 'VersionSwitcher' }
+      ]
+    },  
 
     socialLinks: [
       { icon: "github", link: "https://github.com/HashEdits" },

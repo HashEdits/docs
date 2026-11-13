@@ -14,6 +14,7 @@
     "esbuild@0.28.2": true
   },
   "dependencies": {
-    "@viteplus/versions": "^3.0.0"
+    "@viteplus/versions": "^3.0.0",
+    "typescript": "^7.0.2"
   }
 }
