@@ -125,14 +125,6 @@ Drag and drop the UnityPackage file you've downloaded from Booth or Kofi above y
 
 - Click `Paste Component Values`
 
-- Develop the `EyeLook` section
-
-- Develop the `Transforms` section
-
-![DescriptorEyeLookTransformSection](/src/img/DescriptorEyeLookTransformSection.png)
-
-- Drag and drop your avatar's eye bones in
-
 - Develop the `Face Tracking` section
 
 ![DescriptorFTMeshError](/src/img/DescriptorFTMeshError.png)

@@ -234,19 +234,25 @@ Back in unity take note of your blendshape mix and reproduce it in blender
 
 ## Eye rotation broken
 
-This issue is caused by not having the correct bones assigned in your avatar descriptor
+This is likely caused in situations where the avatar component doesn't reference the right eye bones, this can be caused by a few different factors:
 
-to fix it:
+Your eye bones are not mapped
 
-- Develop the `EyeLook` section
+- To identify the issue: Select your avatar's fbx file in unity, go to the rig tab, configure, then select head, and look if your eye bones are properly assigned
 
-- Develop the `Transforms` section
+- To fix: If they are not assigned, select them from the hierarchy on the left
 
-![DescriptorEyeLookTransformSection](/src/img/DescriptorEyeLookTransformSection.png)
+The reference to the eye bones is missing
 
-- Remplace the eye bones on the descriptor with the eye bones from your avatar
+- To identify the issue: likely caused by swapping the head mesh
 
+- To fix: Perform a head swap in blender, here's [a step by step guide on how to do it](/customisation/apply-to-custom-avatar.md#head-swap)
 
+Another animation is preventing the eye from moving
+
+- To identify the issue: Use the same animation controllers as the prefabs I provide and remove any modular avatar or VRCFury components
+
+- To fix: Check for [Animation Tracking Control](https://creators.vrchat.com/avatars/state-behaviors/#animator-tracking-control) components that may set the `Eyes & Eyelids` the `Tracking` state, and/or add-in one by one every modular avatar or vrcfury component to identify which one is causing the issue.
 
 ## Patcher script creates red errors
 

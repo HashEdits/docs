@@ -167,6 +167,24 @@ Same steps as before
 
 - Press `Export FBX`
 
+### Match eye rotation from the face tracking fbx
+
+- Select the face tracking fbx in unity
+- Go to the inspector tab
+- Click on `Rig`
+- Click `Configure...`
+- Click on `Muscles & Settings`
+- Under the `Per-Muscle Settings` group click on `Head` and develop the following: `Eye Down-Up`, `Eye In-Out`, `Eye Down-Up`, `Eye In-Out`
+- Take a screenshot to remember the settings
+
+![MusclesSettings](/src/img/MusclesSettings.png)
+
+- Press `Done`
+
+- Repeat the same To access the eye muscle settings on your custom fbx
+
+- Enter the settings you screenshot earlier
+
 ## Remplace Unity setup
 
 - Drag and drop the face tracking prefab in your scene
@@ -190,16 +208,6 @@ Same steps as before
 - Right click on your avatar's descriptor component
 
 ![InspectorPaste](/src/img/InspectorPaste.png)
-
-- Click `Paste Component Values`
-
-- Develop the `EyeLook` section
-
-- Develop the `Transforms` section
-
-![DescriptorEyeLookTransformSection](/src/img/DescriptorEyeLookTransformSection.png)
-
-- Drag and drop your avatar's eye bones in
 
 - Develop the `Face Tracking` section
 
