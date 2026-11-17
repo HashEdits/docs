@@ -111,7 +111,7 @@ export default defineVersionedConfig({
     nav: {
       root: [ 
         // Add the version switcher component
-        { component: 'VersionSwitcher' }
+        // { component: 'VersionSwitcher' }
       ]
     },  
 
