@@ -12,6 +12,40 @@ Je ferai de mon mieux pour fournir une mise à jour afin de maintenir la compati
 
 Ce guide est utile si vous avez ajusté votre modèle avec des blendshapes.
 
+Il existe plusieurs façons de procéder : la première n'est peut-être pas parfaite, mais elle est beaucoup plus accessible ; la deuxième méthode est un peu plus longue, mais elle garantit les meilleurs résultats.
+
+### Solution accessible mais imparfaite
+
+<details>
+<summary>Cliquez ici pour développer cette section</summary>
+
+- Dans la fenêtre de l'explorateur de fichiers de votre projet Unity, recherchez `Eye_Closed`
+
+- Sélectionnez l'un des clips d'animation suivants : `Eye_Closed_Left`, `Eye_Closed_Right`, `Eye_Closed_Squint_Left` ou `Eye_Closed_Squint_Right`
+
+- Affichez la fenêtre de prévisualisation dans la fenêtre de l'Inspecteur
+
+![AnimPreviewWindow](/src/img/AnimPreviewWindow.png)
+
+- Glissez-déposez votre avatar dans la fenêtre de prévisualisation
+
+![AnimPreviewWindowAvatar](/src/img/AnimPreviewWindowAvatar.png)
+
+- Ouvrez la fenêtre "Animation" si elle n’est pas déjà ouverte (appuyez sur `Ctrl`+`6`)
+
+- Réduisez la valeur de `EyeClosedRight` ou `EyeClosedLeft` jusqu’à ce que votre œil ne clip plus dans la fenêtre d’aperçu de l’animation
+
+- Répétez l'opération pour les autres clips d'animation "EyeClosed" : `Eye_Closed_Left`, `Eye_Closed_Right`, `Eye_Closed_Squint_Left` ou `Eye_Closed_Squint_Right`
+
+</details>
+
+
+### Solution parfaite mais fastidieuse
+
+<details>
+<summary>Cliquez ici pour développer cette section</summary>
+
+
 ### Localisez le fichier FBX principal de votre modèle personnalisé et sauvegardez-le.
 
 Vous devez d'abord trouver le fichier FBX principal qui contient la tête de votre modèle.
@@ -25,7 +59,7 @@ Pour ce faire :
 
 - Cela fera apparaître le fichier dans l'explorateur de fichiers Unity
 
-- Cliquez avec le bouton droit sur le fichier parent du composant « avatar armature »
+- Cliquez avec le bouton droit sur le fichier parent du composant "avatar armature"
 - Exporter le package
 - Décochez `Include dependencies` dans la fenêtre qui s'ouvre
 - Appuyez sur `Exporter...`
@@ -82,7 +116,7 @@ De retour dans Unity, notez votre mélange de blendshapes et reproduisez-le dans
 
 ![SelectFaceMesh](/src/img/SelectFaceMesh.png)
 
-- Développez la section « Blendshapes »
+- Développez la section `Blendshapes`
 
 - Appuyez sur le petit `0` à côté de la barre de recherche pour n'afficher que les blendshapes qui ne sont pas égales à zéro
 
@@ -188,13 +222,15 @@ De retour dans Unity, notez votre mélange de blendshapes et reproduisez-le dans
 
 ![UnityImportScale](/src/img/UnityImportScale.png)
 
-- Dans la fenêtre « Export » de Blender, sélectionnez l'échelle d'exportation appropriée `1M/Unit = FBX All` et `1cm/Unit = All Local`
+- Dans la fenêtre "Export" de Blender, sélectionnez l'échelle d'exportation appropriée `1M/Unit = FBX All` et `1cm/Unit = All Local`
 
 ![BlenderApplyScaling](/src/img/BlenderApplyScaling.png)
 
 - Appuyez sur `Export FBX`
 
-### Vous avez terminé !
+#### Vous avez terminé !
+
+</details>
 
 ## Rotation des yeux cassé
 
@@ -210,7 +246,7 @@ La référence aux bones des yeux est manquante.
 
 - Pour identifier le problème : cela est probablement dû à l'échange du mesh de la tête.
 
-- Pour corriger le problème : effectuez un « head swap » dans Blender. Voici [un guide étape par étape pour vous aider](/fr/customisation/apply-to-custom-avatar.md#head-swap).
+- Pour corriger le problème : effectuez un "head swap" dans Blender. Voici [un guide étape par étape pour vous aider](/fr/customisation/apply-to-custom-avatar.md#head-swap).
 
 Une autre animation empêche l'œil de bouger.
 
@@ -259,3 +295,17 @@ Cependant vous pouvez le fixer vous même en suivant ces étapes:
 - Et enfin fait glisser la partie du slider la plus proche de 0 sur la ligne correspondant à l'expression `Nose Sneer` j'usqu'a ce que ta tête reviennes à une expression neutre
 
 ![VRCFTTRackingSettingsNoseSneerDeadZone](/src/img/VRCFTTRackingSettingsNoseSneerDeadZone.png)
+
+## Le suivi de mes yeux ou de mon visage ne semble pas fonctionner sur les avatars dotés d'un face tracking natif
+
+Si ce problème se produit, essayez d'activer puis de désactiver le micro pour voir si le suivi reprend,
+
+Si c'est le cas, vous pouvez ouvrir le grand menu de VRChat, vous rendre dans la section `Tracking & IK` de la page des paramètres et désactiver ces deux options : `Mic Mute Disables Face Tracking` et `Mic Mute Disables Eyetracking`
+
+![NativeFTMicMuteDisable](/src/img/NativeFTMicMuteDisable.png)
+
+## Mon visage présente des saccades lorsque j'utilise des avatars avec suivi facial natif
+
+Vous utilisez probablement une ancienne version de VRCFT qui n'est pas compatible avec les systèmes plus récents.
+
+Veuillez installer [VRChatFaceTracking depuis Steam](https://store.steampowered.com/app/3329480/VRCFaceTracking/)

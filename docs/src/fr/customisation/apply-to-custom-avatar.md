@@ -20,7 +20,7 @@ Pour ce faire :
 
 - Cela affichera le fichier dans l'explorateur de fichiers Unity
 
-- Cliquez avec le bouton droit sur le fichier parent du composant « avatar armature »
+- Cliquez avec le bouton droit sur le fichier parent du composant "avatar armature"
 - Exporter le package
 - Décochez `Include dependencies` dans la fenêtre qui s'ouvre
 - Appuyez sur `Export...`
@@ -86,7 +86,7 @@ Mêmes étapes que précédemment
 
 ![BrowseMaterials](/src/img/BrowseMaterials.png)
 
-- Sélectionnez la version du material sans le « .001 » à la fin de son nom.
+- Sélectionnez la version du material sans le `.001` à la fin de son nom.
 
 ![SelectMatWo.001](/src/img/SelectMatWo.001.png)
 
@@ -187,7 +187,7 @@ Mêmes étapes que précédemment
 
 - Une fois fini cliquez sur `done` et cliquez `apply` sur le pop up qui apparait
 
-## Attribuez le menu, les paramètres et les contrôleurs d'animation
+## Remplacer le setup Unity
 
 - Glissez-déposez le prefab de face-tracking dans votre scène
 
@@ -197,23 +197,23 @@ Mêmes étapes que précédemment
 
 - Placez la deuxième fenêtre d'inspecteur côte à côte avec la fenêtre d'origine.
 
-![InspectorsSideBySide](/src/img/InspectorsSideBySide.png)
+![InspectorsSideBySideNative](/src/img/InspectorsSideBySideNative.png)
+
+- Faites un clic droit sur le composant "avatar descriptor" du prefab FT
+
+![InspectorCopy](/src/img/InspectorCopy.png)
+
+- Cliquez sur "Copier le composant"
 
 - Sélectionnez votre prefab.
 
-- Cliquez sur `Playable Layers` dans les deux fenêtres d'inspection.
+- Faites un clic droit sur le composant "avatar descriptor" de votre avatar
 
-- Cliquez sur « Additive animation controller » dans la fenêtre d'inspection du prefab de face-tracking.
+![AnimationControllerHighlight](/src/img/InspectorPaste.png)
 
-![AnimationControllerHighlight](/src/img/AnimationControllerHighlight.png)
+- Développer la section "Face tracking"
 
-- Glissez-déposez le contrôleur d'animation mis en surbrillance dans l'emplacement additif de votre prefab
-
-- Procédez de la même manière pour le contrôleur FX
-
-- Faites défiler les deux inspecteurs jusqu'en bas et cliquez sur Expressions
-
-- Remplacez les menus de la même manière
+- Attribuez les mêmes meshs que ceux de la version avec face tracking
 
 ## Fusionner avec des configurations existantes : logique supplémentaire
 
@@ -231,7 +231,7 @@ Veuillez noter que je ne fournirai pas d'assistance pour cette méthode de fusio
 ::: warning ATTENTION
 Vérifiez que votre animateur respecte les points suivants :
 
-- Il ne dispose d'aucun état qui définit la section `Eyes & Eyelids` d'un animation state behavior [Animator Tracking Control](https://creators.vrchat.com/avatars/state-behaviors/#animator-tracking-control) sur une valeur autre que `No Change`.
+- Il ne dispose d'aucun état qui définit la section `Eyes & Eyelids` d'un [Animator Tracking Control](https://creators.vrchat.com/avatars/state-behaviors/#animator-tracking-control) animation state behavior sur une valeur autre que `No Change`.
 - Utilise `FacialExpressionsDisabled` pour mutter tout les gesture expressions (toutes les transitions de gesture normales doivent avoir une condition sur `FacialExpressionsDisabled` == `false` et avoir un état par défaut avec une seule condition d'état : `FacialExpressionsDisabled` == `true`)
 :::
 
@@ -281,6 +281,17 @@ Vérifiez que votre animateur respecte les points suivants :
 <details>
 <summary>Cliquez ici pour afficher les détails</summary>
 
+::: warning
+Les mises à jour manuelles ne sont pas prises en charge avec les derniers perfabs pour le moment, car AV3 Manager n'a pas encore été mis à jour pour copier les nouveaux systèmes requis.
+:::
+
+::: warning
+Vérifiez bien que votre animateur respecte les consignes suivantes :
+
+- Il ne doit comporter aucun état définissant la section `Eyes & Eyelids` d’un "animation state behavior" [Animator Tracking Control](https://creators.vrchat.com/avatars/state-behaviors/#animator-tracking-control) sur une valeur autre que `No Change`
+- Utilise `FacialExpressionsDisabled` pour supprimer toutes les gestures (toutes les transitions de gestures normales doivent avoir la case `FacialExpressionsDisabled` cochée sur `false` et disposer d’un état par défaut comportant une seule condition d’état : `FacialExpressionsDisabled` == `true`)
+:::
+
 - Assurez-vous que `Avatars 3.0 Manager` a été ajouté aux paquets de votre projet
 
 ![AddAV3Manager](/src/img/AddAV3Manager.png)
@@ -305,13 +316,9 @@ Vérifiez que votre animateur respecte les points suivants :
 
     > Voici à quoi ressemble le mien après avoir supprimé les autres calques
 
-::: warning ATTENTION
-Assurez-vous qu'aucun état ne définit la section `Eyes & Eyelids` d'un [Animator Tracking Control](https://creators.vrchat.com/avatars/state-behaviors/#animator-tracking-control) animation state behavior sur une valeur autre que `No Change`
-:::
-
 - Attribuez l'animateur de face-tracking qui correspond au nom de votre contrôleur FX avec FT à la fin.
 
-- Ouvrez la fenêtre d'AV3 Emulator.
+- Ouvrez la fenêtre d'AV3 Manager.
 
 ![OpenAV3MWindow](/src/img/OpenAV3MWindow.png)
 
@@ -352,7 +359,7 @@ Assurez-vous qu'aucun état ne définit la section `Eyes & Eyelids` d'un [Animat
 
 #### Menus
 
-- Sélectionnez votre menu existant en double-cliquant sur l'élément à côté du menu dans le menu déroulant « Expression » de l'avatar descriptor.
+- Sélectionnez votre menu existant en double-cliquant sur l'élément à côté du menu dans le menu déroulant "Expression" de l'avatar descriptor.
 - Cliquez sur le bouton `+`.
 
 ![MenuAddButton](/src/img/MenuAddButton.png)

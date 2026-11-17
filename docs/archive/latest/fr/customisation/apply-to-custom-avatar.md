@@ -20,7 +20,7 @@ Pour ce faire :
 
 - Cela affichera le fichier dans l'explorateur de fichiers Unity
 
-- Cliquez avec le bouton droit sur le fichier parent du composant « avatar armature »
+- Cliquez avec le bouton droit sur le fichier parent du composant "avatar armature"
 - Exporter le package
 - Décochez `Include dependencies` dans la fenêtre qui s'ouvre
 - Appuyez sur `Export...`
@@ -86,7 +86,7 @@ Mêmes étapes que précédemment
 
 ![BrowseMaterials](/archive/latest/img/BrowseMaterials.png)
 
-- Sélectionnez la version du material sans le « .001 » à la fin de son nom.
+- Sélectionnez la version du material sans le `.001` à la fin de son nom.
 
 ![SelectMatWo.001](/archive/latest/img/SelectMatWo.001.png)
 
@@ -203,7 +203,7 @@ Mêmes étapes que précédemment
 
 - Cliquez sur `Playable Layers` dans les deux fenêtres d'inspection.
 
-- Cliquez sur « Additive animation controller » dans la fenêtre d'inspection du prefab de face-tracking.
+- Cliquez sur "Additive animation controller" dans la fenêtre d'inspection du prefab de face-tracking.
 
 ![AnimationControllerHighlight](/archive/latest/img/AnimationControllerHighlight.png)
 
@@ -352,7 +352,7 @@ Assurez-vous qu'aucun état ne définit la section `Eyes & Eyelids` d'un [Animat
 
 #### Menus
 
-- Sélectionnez votre menu existant en double-cliquant sur l'élément à côté du menu dans le menu déroulant « Expression » de l'avatar descriptor.
+- Sélectionnez votre menu existant en double-cliquant sur l'élément à côté du menu dans le menu déroulant "Expression" de l'avatar descriptor.
 - Cliquez sur le bouton `+`.
 
 ![MenuAddButton](/archive/latest/img/MenuAddButton.png)

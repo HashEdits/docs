@@ -25,7 +25,7 @@ Pour ce faire :
 
 - Cela fera apparaître le fichier dans l'explorateur de fichiers Unity
 
-- Cliquez avec le bouton droit sur le fichier parent du composant « avatar armature »
+- Cliquez avec le bouton droit sur le fichier parent du composant "avatar armature"
 - Exporter le package
 - Décochez `Include dependencies` dans la fenêtre qui s'ouvre
 - Appuyez sur `Exporter...`
@@ -82,7 +82,7 @@ De retour dans Unity, notez votre mélange de blendshapes et reproduisez-le dans
 
 ![SelectFaceMesh](/archive/latest/img/SelectFaceMesh.png)
 
-- Développez la section « Blendshapes »
+- Développez la section `Blendshapes`
 
 - Appuyez sur le petit `0` à côté de la barre de recherche pour n'afficher que les blendshapes qui ne sont pas égales à zéro
 
@@ -188,7 +188,7 @@ De retour dans Unity, notez votre mélange de blendshapes et reproduisez-le dans
 
 ![UnityImportScale](/archive/latest/img/UnityImportScale.png)
 
-- Dans la fenêtre « Export » de Blender, sélectionnez l'échelle d'exportation appropriée `1M/Unit = FBX All` et `1cm/Unit = All Local`
+- Dans la fenêtre "Export" de Blender, sélectionnez l'échelle d'exportation appropriée `1M/Unit = FBX All` et `1cm/Unit = All Local`
 
 ![BlenderApplyScaling](/archive/latest/img/BlenderApplyScaling.png)
 
@@ -210,7 +210,7 @@ La référence aux bones des yeux est manquante.
 
 - Pour identifier le problème : cela est probablement dû à l'échange du mesh de la tête.
 
-- Pour corriger le problème : effectuez un « head swap » dans Blender. Voici [un guide étape par étape pour vous aider](/fr/customisation/apply-to-custom-avatar.md#head-swap).
+- Pour corriger le problème : effectuez un "head swap" dans Blender. Voici [un guide étape par étape pour vous aider](/fr/customisation/apply-to-custom-avatar.md#head-swap).
 
 Une autre animation empêche l'œil de bouger.
 
