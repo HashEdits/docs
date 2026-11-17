@@ -278,6 +278,17 @@ Double check that your animator follows the following:
 <details>
 <summary>Click here to show details</summary>
 
+::: warning
+Manual updates are not supported with newer perfabs at this time due to AV3 Manager not being updated to copy over the required newer systems
+:::
+
+::: warning
+Double check that your animator follows the following:
+
+- Doesn't have any states that sets the `Eyes & Eyelids` section of a [Animator Tracking Control](https://creators.vrchat.com/avatars/state-behaviors/#animator-tracking-control) animation state behavior to anything other than `No Change`
+- Uses the `FacialExpressionsDisabled` to suppress any gestures (All normal gesture transitions should have a check on `FacialExpressionsDisabled` == `false` and have a default state with only a single any state condition: `FacialExpressionsDisabled` == `true`)
+:::
+
 - Make sure you have `Avatars 3.0 Manager` added to your project's packages
 
   ![AddAV3Manager](/src/img/AddAV3Manager.png)
@@ -302,13 +313,9 @@ Double check that your animator follows the following:
 
     > This is what mine looks like after deleting the rest of the layers
 
-::: warning
-Make sure that you don't have any states that sets the `Eyes & Eyelids` section of a [Animator Tracking Control](https://creators.vrchat.com/avatars/state-behaviors/#animator-tracking-control) animation state behavior to anything other than `No Change`
-:::
-
 - Assign the Face Tracking animator that corresponds to the name of your FX Controller with FT at the end of it
 
-- Open The AV3 Emulator window
+- Open The AV3 Manager window
 
   ![OpenAV3MWindow](/src/img/OpenAV3MWindow.png)
 

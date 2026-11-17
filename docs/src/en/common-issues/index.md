@@ -295,3 +295,17 @@ However you can fix it yourself by following the following steps:
 - Finally slide the bit of the `Nose Sneer` slider closer to 0 up until your face's back to a resting expression
 
 ![VRCFTTRackingSettingsNoseSneerDeadZone](/src/img/VRCFTTRackingSettingsNoseSneerDeadZone.png)
+
+## My eyes or face tracking don't seem to move on native face tracking avatars
+
+If this behevior happens please try to mute and unmute to see if tracking resumes,
+
+If it does then you might want to open your big menu pannel in VRChat and go to the `Tracking & IK` section of the settings page and disable these two settings: `Mic Mute Disables Face Tracking` & `Mic Mute Disables Eyetracking`
+
+![NativeFTMicMuteDisable](/src/img/NativeFTMicMuteDisable.png)
+
+## My face jitters when using native face tracking avatars
+
+You're lilely using an older version of VRCFT that's not compatible with the newer systems
+
+Please instal [VRChatFaceTracking from Steam](https://store.steampowered.com/app/3329480/VRCFaceTracking/)

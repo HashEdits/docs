@@ -5,7 +5,7 @@ Every so often I will revisit some of my face tracking add-ons to keep them up t
 
 ::: warning
 If you are upgrading to a native setup DO NOT CLICK `Auto-Fill Blendshapes`
-Please make sure your are using version 3.10.6 of the VRCSDK & are using [VRCFT from steam](https://store.steampowered.com/app/3329480/VRCFaceTracking/)
+Please make sure your are using version 3.10.6 of the VRCSDK or newer & are using [VRCFT from steam](https://store.steampowered.com/app/3329480/VRCFaceTracking/)
 :::
 
 
