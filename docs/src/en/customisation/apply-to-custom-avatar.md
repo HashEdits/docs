@@ -213,7 +213,7 @@ Same steps as before
 
 - Assign the same meshes as the ones in the face tracking version
 
-## Merging onto existing setups extra logic
+## Merging onto existing setups extra logic (optional)
 
 This section is interesting if you have existing animation controller logic which enables custom toggles or systems on your avatar.
 
