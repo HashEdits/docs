@@ -2,6 +2,12 @@
 
 Every so often I will revisit some of my face tracking add-ons to keep them up to date with my newer findings, here's a guide on how to update:
 
+::: warning
+If you are upgrading to a native setup DO NOT CLICK `Auto-Fill Blendshapes`
+Please make sure your are using version 3.10.6 of the VRCSDK or newer & are using [VRCFT from steam](https://store.steampowered.com/app/3329480/VRCFaceTracking/)
+Please also reffer to the appropriate doccumentation [here](https://hashedits.github.io/docs/next/customisation/upgrade-ft-version.html)
+:::
+
 ## Create prefabs of your avatar(s)
 
 Drag and drop your avatar(s) in your unity file explorer and click `Create Original Prefab` if a dialog box opens
