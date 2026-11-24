@@ -12,10 +12,43 @@
 
 このガイドは、ブレンドシェイプを使用してモデルを調整した場合に有効です。
 
+ブレンドシェイプを調整する方法はいくつかあります。最初の方法は完璧ではありませんが簡単に行え、次の方法は手間がかかりますが最良の結果が得られます。
+
+### 簡単ですが完全ではない修正方法
+
+<details>
+<summary>このセクションを開く</summary>
+
+- Unity プロジェクトのファイルエクスプローラーで `Eye_Closed` を検索します
+
+- 次のアニメーションクリップのいずれかを選択します：`Eye_Closed_Left`、`Eye_Closed_Right`、`Eye_Closed_Squint_Left`、`Eye_Closed_Squint_Right`
+
+- インスペクターウィンドウでプレビューウィンドウを開きます
+
+![AnimPreviewWindow](/src/img/AnimPreviewWindow.png)
+
+- アバターをプレビューウィンドウにドラッグ＆ドロップします
+
+![AnimPreviewWindowAvatar](/src/img/AnimPreviewWindowAvatar.png)
+
+- Animation ウィンドウを開いていない場合は開きます（`Ctrl` + `6`）
+
+- アニメーションプレビューでクリッピングがなくなるまで、`EyeClosedRight` または `EyeClosedLeft` の値を下げます
+
+- 他の `Eye_Closed` アニメーションクリップについても同じ手順を繰り返します
+
+</details>
+
+
+### 完全ですが手間のかかる修正方法
+
+<details>
+<summary>このセクションを開く</summary>
+
+
 ### カスタムモデルのメイン FBX ファイルを見つけてバックアップする
 
 まず、モデルの頭部を含むメインの FBX ファイルを探します。手順は以下の通りです。
-手順は以下の通りです：
 
 - シーン階層で対象を左クリックして選択します
   ![UnitySelectPrefab](/src/img/UnitySelectPrefab.png)
@@ -33,6 +66,7 @@
 - Unity に戻ります
 - 再度そのファイルを右クリックします
 - `Show In Explorer` をクリックします
+
 
 ### Blender を開く
 
@@ -196,6 +230,8 @@ Unity に戻り、現在使用しているブレンドシェイプの組み合�
 
 ### 完了！
 
+</details>
+
 ## 目の回転が正しく動作しない
 
 これは、アバターコンポーネントが正しい目のボーンを参照していない場合に発生しやすい問題です。主な原因は以下の通りです。
@@ -210,7 +246,7 @@ Unity に戻り、現在使用しているブレンドシェイプの組み合�
 
 - 確認方法：主にヘッドメッシュを差し替えた場合に発生します
 
-- 修正方法：Blender でヘッドスワップを行ってください。手順は [こちらのガイド](/customisation/apply-to-custom-avatar.md#head-swap) を参照してください
+- 修正方法：Blender でヘッドスワップを行い、アバターのディスクリプターから正しい右目のボーンを参照してください。手順は [こちらのガイド](/customisation/apply-to-custom-avatar.md#head-swap) を参照してください
 
 別のアニメーションが目の動きを妨げている
 
@@ -258,3 +294,17 @@ Unity に戻り、現在使用しているブレンドシェイプの組み合�
 - `Nose Sneer` のスライダーを 0 に近づける方向へ調整し、顔が自然な無表情になるまで値を下げます
 
 ![VRCFTTRackingSettingsNoseSneerDeadZone](/src/img/VRCFTTRackingSettingsNoseSneerDeadZone.png)
+
+## ネイティブフェイストラッキングのアバターで目またはフェイストラッキングが動かない
+
+この症状が発生する場合は、マイクのミュートとミュート解除を試して、トラッキングが再開するか確認してください。
+
+再開する場合は、VRChat の大きなメニューを開き、設定ページの `Tracking & IK` セクションで次の2つの設定を無効にしてください：`Mic Mute Disables Face Tracking` と `Mic Mute Disables Eyetracking`
+
+![NativeFTMicMuteDisable](/src/img/NativeFTMicMuteDisable.png)
+
+## ネイティブフェイストラッキングのアバターで顔が揺れる
+
+新しいシステムに対応していない古いバージョンの VRCFT を使用している可能性があります。
+
+[Steam版のVRChatFaceTracking](https://store.steampowered.com/app/3329480/VRCFaceTracking/)をインストールしてください。
