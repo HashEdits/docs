@@ -185,7 +185,7 @@ Same steps as before
 
 - Enter the settings you screenshot earlier
 
-## Remplace Unity setup
+## Replace Unity setup
 
 - Drag and drop the face tracking prefab in your scene
 

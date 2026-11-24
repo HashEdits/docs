@@ -122,16 +122,6 @@
 
 - 左クリックを離します
 
-### フェイストラッキング FBX の残りを削除する
-
-- `Armature.001` を選択します
-
-- `Shift` を押し続けます
-
-- `↓` を押し続けてすべて選択します
-
-- `Del` を押します
-
 ### 元のヘッドを削除する
 
 - シーンコレクションタブで、元のヘッド（ほとんどの場合`Body`という名前になっています）を選択します
@@ -142,6 +132,15 @@
 
 - `.001`を名前の末尾から削除するために、`Backspace`キーを4回押します
 
+### フェイストラッキング FBX の残りを削除する
+
+- `Armature.001` を選択します
+
+- `Shift` を押し続けます
+
+- `↓` を押し続けてすべて選択します
+
+- `Del` を押します
 
 ### 作業をエクスポートする
 
@@ -172,53 +171,42 @@
 
 - `Export FBX` をクリックします
 
-### フェイストラッキング FBX から目の回転設定を一致させる
+### フェイストラッキング FBX から目の回転設定を合わせる
 
 - Unity でフェイストラッキング FBX を選択します
 - インスペクタータブを開きます
 - `Rig` をクリックします
 - `Configure...` をクリックします
 - `Muscles & Settings` をクリックします
-- `Per-Muscle Settings` 内の `Head` を展開し、以下を表示します： `Eye Down-Up`, `Eye In-Out`, `Eye Down-Up`, `Eye In-Out`
-- 設定を忘れないようスクリーンショットを撮ります
+- `Per-Muscle Settings` グループの `Head` を展開し、次の項目を確認します：`Eye Down-Up`、`Eye In-Out`、`Eye Down-Up`、`Eye In-Out`
+- 設定をスクリーンショットで保存しておきます
 
 ![MusclesSettings](/src/img/MusclesSettings.png)
 
 - `Done` をクリックします
+- カスタム FBX の目の筋肉設定にも同じ操作を行います
+- 先ほどスクリーンショットを撮った設定値を入力します
 
-- 同様に、カスタム FBX 側でも目の筋肉設定を開きます
+## Unity の設定をコピーする
 
-- 先ほどのスクリーンショットと同じ値を入力します
+- フェイストラッキングプレハブをシーンにドラッグ＆ドロップします
+- プレハブを右クリックし、`Properties` を選択します
+- 2つ目のインスペクターウィンドウを元のウィンドウの横に並べます
 
-## メニュー・パラメータ・アニメーションコントローラーを割り当てる
+![InspectorsSideBySideNative](/src/img/InspectorsSideBySideNative.png)
 
-- フェイストラッキングのプレハブをシーンにドラッグ＆ドロップします
+- FT プレハブの Avatar Descriptor コンポーネントを右クリックします
 
-- 右クリックします
+![InspectorCopy](/src/img/InspectorCopy.png)
 
-- `Properties` をクリックします
-
-- 2つのインスペクターを横並びに表示します
-
-- 設定が完了したら `Done` をクリックし、ポップアップで `Apply` をクリックします
-
-![InspectorsSideBySide](/src/img/InspectorsSideBySide.png)
-
+- `Copy Component` をクリックします
 - 自分のプレハブを選択します
+- アバターの Avatar Descriptor コンポーネントを右クリックします
 
-- 両方のインスペクターで `Playable Layers` をクリックします
+![InspectorPaste](/src/img/InspectorPaste.png)
 
-- FT プレハブ側の `Additive` アニメーションコントローラーをクリックします
-
-![AnimationControllerHighlight](/src/img/AnimationControllerHighlight.png)
-
-- それを自分のプレハブの Additive スロットにドラッグ＆ドロップします
-
-- FX コントローラーも同様に設定します
-
-- 両方のインスペクターを一番下までスクロールし、`Expressions` をクリックします
-
-- 同様にメニューを置き換えます
+- `Face Tracking` セクションを展開します
+- フェイストラッキング版と同じメッシュを割り当てます
 
 ## 既存セットアップと統合する（高度な設定）
 
@@ -257,7 +245,7 @@ Modular Avatar は、VRC レイヤードライバの ID 順を変更してしま
 - `Full Controller (VRCFury)` を追加
 
 - Controller セクションで `+` を2回クリック
-- `FTOnly` と `Additive ET` を割り当て `Hash's_Things/AvatarName/anim/controllers`
+- `Hash's_Things/AvatarName/anim/controllers` にある `FTOnly` と `Additive ET` コントローラーを割り当てます。通常のアバター用コントローラーではなく、この `FTOnly` コントローラーを使用してください
 
 - Menu セクションで `+` をクリック
 - `SimpleFTControls` メニューを割り当て
@@ -345,6 +333,7 @@ Modular Avatar は、VRC レイヤードライバの ID 順を変更してしま
 
 - パラメータ名の末尾に `FT` が付いたものに切り替えます
 - カスタムロジック用の `VRCAvatarParameters` を別ファイルに抽出します
+- 純粋なコピーパラメータの挙動と、フェイストラッキング用ブレンドシェイプセットは、FT版の設定からコピーしてください
 - Avatar 3.0 Manager ウィンドウを開きます
 - アバターをドラッグ＆ドロップします
 - `Parameters` タブをクリックします
